@@ -1,116 +1,146 @@
-# The Minimal theme
+---
+layout: default
+---
 
-[![.github/workflows/ci.yaml](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml/badge.svg)](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
+[Link to another page](./another-page.html).
 
-![Thumbnail of Minimal](thumbnail.png)
+There should be whitespace between paragraphs.
 
-## Usage
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-To use the Minimal theme:
 
-1. Add the following to your site's `_config.yml`:
+# Hi there 👋
 
-    ```yml
-    remote_theme: pages-themes/minimal@v0.2.0
-    plugins:
-    - jekyll-remote-theme # add this line to the plugins list if you already have one
-    ```
+<!--
+**engahmelkholy/engahmelkholy** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+Here are some ideas to get you started:
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
 
-## Customizing
 
-### Configuration variables
+"I’m Ahmed Elkholy, an assistant lecturer at the Electrical Power and Machines Engineering Department of the Faculty of Engineering at Tanta University. I have a B.Sc. and M.SC. degrees in Electrical Power and Machines Engineering from Tanta University and I’m currently pursuing my Ph.D. degree at Moscow Power Engineering Institute.
 
-Minimal will respect the following variables, if set in your site's `_config.yml`:
+My research interests include grid synchronization, distributed generators, adaptive phase-locked loop tuning system, and industrial electronics. I have published several papers in reputable journals and conferences on these topics. I enjoy teaching and mentoring students and sharing my knowledge and experience with them.
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+In my spare time, I like to read books, watch movies, play chess. I’m always eager to learn new things and meet new people. If you want to know more about me or my work, feel free to contact me anytime."
+
+- 👯 I’m looking to collaborate on building power system analysis package in MATLAB language as well as python.
+
+## Header 2
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+### Header 3
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
 ```
 
-Additionally, you may choose to set the following optional variables:
-
-```yml
-show_downloads: ["true" or "false" (unquoted) to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
 ```
 
-### Stylesheet
+#### Header 4
 
-If you'd like to add your own custom styles:
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
 
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
+##### Header 5
 
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
 
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+###### Header 6
 
-### Layouts
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
 
-If you'd like to change the theme's HTML layout:
+### There's a horizontal rule below this.
 
-1. For some changes such as a custom `favicon`, you can add custom files in your local `_includes` folder. The files [provided with the theme](https://github.com/pages-themes/minimal/tree/master/_includes) provide a starting point and are included by the [original layout template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html).
-2. For more extensive changes, [copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-3. Create a file called `/_layouts/default.html` in your site
-4. Paste the default layout content copied in the first step
-5. Customize the layout as you'd like
+* * *
 
-### Customizing Google Analytics code
+### Here is an unordered list:
 
-Google has released several iterations to their Google Analytics code over the years since this theme was first created. If you would like to take advantage of the latest code, paste it into `_includes/head-custom-google-analytics.html` in your Jekyll site.
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
 
-### Overriding GitHub-generated URLs
+### And an ordered list:
 
-Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
 
-1. Look at [the template source](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
-3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+### And a nested list:
 
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
 
-For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+### Small image
 
-## Roadmap
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
-See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
+### Large image
 
-## Project philosophy
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
-The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
 
-## Contributing
+### Definition lists can be used with HTML syntax.
 
-Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
 
-### Previewing the theme locally
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
-
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` once before the test script will work.
+```
+The final element.
+```
