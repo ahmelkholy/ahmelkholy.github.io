@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Projects 
+# Projects
 
 this is the projects page
 
