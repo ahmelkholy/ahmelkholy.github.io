@@ -38,7 +38,7 @@ staticman:
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  requiredFields         : ['Ahmed Elkholy', 'ahmed_elkholy@f-eng.tanta.edu.eg', 'message']
   transforms:
     email                : "md5"
   generatedFields:
@@ -80,16 +80,16 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "Ahmed Elkholy"
   avatar           : "profile.png"
   bio              : "Your biography for the left-hand sidebar"
   location         : #"Location"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en"
   email            : "ahmed_elkholy@f-eng.tanta.edu.eg"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "http://tdb2.tanta.edu.eg/staff/ahmed_elkholy"
   bitbucket        :
   codepen          :
   dribbble         :
