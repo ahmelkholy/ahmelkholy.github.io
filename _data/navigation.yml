@@ -9,9 +9,9 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
-        
+  - title: "Courses"
+    url: /course/
+
   - title: "Blog Posts"
     url: /year-archive/
     
