@@ -1,0 +1,86 @@
+<!-- Google AdSense -->
+{% if site.google_ad_client %}
+<!-- Auto ads -->
+<script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google_ad_client }}"
+  crossorigin="anonymous"
+></script>
+
+<!-- Initialize AdSense -->
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "{{ site.google_ad_client }}",
+    enable_page_level_ads: true,
+  });
+</script>
+{% endif %}
+
+<!-- Display Ad Units -->
+{% if page.ads != false and site.google_ad_client %}
+<!-- Responsive Ad Unit -->
+<div class="ad-container" style="text-align: center; margin: 20px 0">
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="{{ site.google_ad_client }}"
+    data-ad-slot="{{ site.google_ad_slot_responsive | default: 'AUTO' }}"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% endif %}
+
+<!-- In-Article Ad Unit -->
+{% if include.type == "in-article" and site.google_ad_client %}
+<div class="ad-container" style="text-align: center; margin: 15px 0">
+  <ins
+    class="adsbygoogle"
+    style="display: block; text-align: center"
+    data-ad-layout="in-article"
+    data-ad-format="fluid"
+    data-ad-client="{{ site.google_ad_client }}"
+    data-ad-slot="{{ site.google_ad_slot_article | default: 'AUTO' }}"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% endif %}
+
+<!-- Sidebar Ad Unit -->
+{% if include.type == "sidebar" and site.google_ad_client %}
+<div class="sidebar-ad" style="margin: 20px 0">
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="{{ site.google_ad_client }}"
+    data-ad-slot="{{ site.google_ad_slot_sidebar | default: 'AUTO' }}"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% endif %}
+
+<!-- Footer Ad Unit -->
+{% if include.type == "footer" and site.google_ad_client %}
+<div class="footer-ad" style="text-align: center; margin: 20px 0">
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="{{ site.google_ad_client }}"
+    data-ad-slot="{{ site.google_ad_slot_footer | default: 'AUTO' }}"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% endif %}

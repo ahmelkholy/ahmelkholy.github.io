@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ahmelkholy.github.io/sitemap.xml
+
+# Allow all search engines to crawl the site
+# Disallow crawling of admin and private directories (if any)
+Disallow: /admin/
+Disallow: /_*
+Disallow: /.git/
+
+# Allow crawling of important academic and research content
+Allow: /publications/
+Allow: /research/
+Allow: /projects/
+Allow: /cv/
+Allow: /about/
+Allow: /blog/
+
+# Crawl delay (optional - be gentle with the server)
+Crawl-delay: 1

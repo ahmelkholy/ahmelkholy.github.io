@@ -1,0 +1,160 @@
+---
+---
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Ahmed M. ElKholy",
+ "givenName": "Ahmed",
+ "familyName": "ElKholy",
+ "additionalName": "M.",
+ "jobTitle": "PhD Student & Assistant Lecturer",
+ "description": "PhD Student in Electrical Engineering at MPEI | Assistant Lecturer at Tanta University | Expert in FACTS Devices, Industrial Protection & Decarbonization",
+ "url": "https://ahmelkholy.github.io",
+ "image": "https://ahmelkholy.github.io/images/profile.png",
+ "email": "mailto:your-email@example.com",
+ "telephone": "+20-xxx-xxx-xxxx",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Tanta",
+  "addressRegion": "Gharbia",
+  "addressCountry": "Egypt"
+ },
+ "alumniOf": [
+  {
+   "@type": "EducationalOrganization",
+   "name": "Tanta University",
+   "url": "https://tanta.edu.eg",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tanta",
+    "addressCountry": "Egypt"
+   }
+  },
+  {
+   "@type": "EducationalOrganization",
+   "name": "National Research University Moscow Power Engineering Institute",
+   "alternateName": "MPEI",
+   "url": "https://mpei.ru",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Moscow",
+    "addressCountry": "Russia"
+   }
+  }
+ ],
+ "worksFor": {
+  "@type": "EducationalOrganization",
+  "name": "Tanta University",
+  "department": "Faculty of Engineering",
+  "url": "https://tanta.edu.eg"
+ },
+ "knowsAbout": [
+  "Electrical Engineering",
+  "Power Systems",
+  "FACTS Devices",
+  "Industrial Protection",
+  "Renewable Energy",
+  "Smart Grid",
+  "Machine Learning",
+  "Python Programming",
+  "MATLAB",
+  "Power System Analysis"
+ ],
+ "knowsLanguage": [
+  {
+   "@type": "Language",
+   "name": "Arabic",
+   "alternateName": "ar"
+  },
+  {
+   "@type": "Language",
+   "name": "English",
+   "alternateName": "en"
+  },
+  {
+   "@type": "Language",
+   "name": "Russian",
+   "alternateName": "ru"
+  }
+ ],
+ "hasCredential": [
+  {
+   "@type": "EducationalOccupationalCredential",
+   "name": "PhD in Electrical Engineering",
+   "educationalLevel": "Doctorate",
+   "about": "FACTS Devices and Power System Control",
+   "dateCreated": "2019",
+   "expectedCompletionDate": "2024",
+   "educationalCredentialAwarded": "PhD",
+   "recognizedBy": {
+    "@type": "EducationalOrganization",
+    "name": "National Research University Moscow Power Engineering Institute"
+   }
+  },
+  {
+   "@type": "EducationalOccupationalCredential",
+   "name": "Master of Science in Power Systems",
+   "educationalLevel": "Masters",
+   "dateCreated": "2014",
+   "dateExpires": "2016",
+   "educationalCredentialAwarded": "M.Sc.",
+   "recognizedBy": {
+    "@type": "EducationalOrganization",
+    "name": "Tanta University"
+   }
+  },
+  {
+   "@type": "EducationalOccupationalCredential",
+   "name": "Bachelor of Engineering in Electrical Engineering",
+   "educationalLevel": "Bachelors",
+   "dateCreated": "2009",
+   "dateExpires": "2014",
+   "educationalCredentialAwarded": "B.Eng.",
+   "recognizedBy": {
+    "@type": "EducationalOrganization",
+    "name": "Tanta University"
+   }
+  }
+ ],
+ "memberOf": [
+  {
+   "@type": "Organization",
+   "name": "IEEE",
+   "url": "https://ieee.org"
+  }
+ ],
+ "sameAs": [
+  "https://linkedin.com/in/your-profile",
+  "https://github.com/ahmelkholy",
+  "https://orcid.org/your-orcid-id",
+  "https://www.researchgate.net/profile/your-profile",
+  "https://scholar.google.com/citations?user=your-id",
+  "https://www.scopus.com/authid/detail.uri?authorId=your-id",
+  "https://www.webofscience.com/wos/author/record/your-id",
+  "https://www.zotero.org/your-profile",
+  "https://sciprofiles.com/profile/your-id",
+  "https://www.youtube.com/@your-channel"
+ ],
+ "hasOccupation": {
+  "@type": "Occupation",
+  "name": "Assistant Lecturer",
+  "occupationLocation": {
+   "@type": "Place",
+   "name": "Tanta University"
+  },
+  "skills": [
+   "Power System Analysis",
+   "FACTS Devices",
+   "Industrial Protection",
+   "Python Programming",
+   "MATLAB",
+   "Research Methodology",
+   "Academic Teaching"
+  ]
+ },
+ "seeks": {
+  "@type": "Demand",
+  "name": "Research Collaboration",
+  "description": "Seeking collaborations in power systems research, renewable energy integration, and smart grid technologies"
+ }
+}

@@ -1,0 +1,219 @@
+/* RTL Support for Arabic Language */
+/* Add this to support Arabic text direction and styling */
+
+/* Apply RTL to pages with Arabic language */
+html[lang="ar"],
+html[lang="ar-SA"],
+html[lang="ar-EG"],
+html[lang="ar-AE"] {
+  direction: rtl;
+}
+
+/* RTL Body styling */
+[dir="rtl"] body {
+  text-align: right;
+}
+
+/* RTL Navigation adjustments */
+[dir="rtl"] .masthead__inner-wrap {
+  text-align: right;
+}
+
+[dir="rtl"] .greedy-nav {
+  text-align: right;
+}
+
+[dir="rtl"] .greedy-nav a {
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+/* RTL Sidebar adjustments */
+[dir="rtl"] .sidebar {
+  text-align: right;
+}
+
+[dir="rtl"] .author__avatar {
+  float: right;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+[dir="rtl"] .author__content {
+  text-align: right;
+}
+
+[dir="rtl"] .author__urls {
+  text-align: right;
+}
+
+[dir="rtl"] .author__urls li {
+  text-align: right;
+}
+
+/* RTL Content area */
+[dir="rtl"] .page__content {
+  text-align: right;
+}
+
+[dir="rtl"] .page__title {
+  text-align: right;
+}
+
+/* RTL Archive layout */
+[dir="rtl"] .archive__item {
+  text-align: right;
+}
+
+[dir="rtl"] .archive__item-title {
+  text-align: right;
+}
+
+[dir="rtl"] .archive__item-excerpt {
+  text-align: right;
+}
+
+/* RTL Breadcrumbs */
+[dir="rtl"] .breadcrumbs {
+  text-align: right;
+}
+
+[dir="rtl"] .breadcrumbs ol {
+  direction: rtl;
+}
+
+/* RTL Footer */
+[dir="rtl"] .page__footer {
+  text-align: right;
+}
+
+[dir="rtl"] .page__footer-follow {
+  text-align: right;
+}
+
+/* RTL Social links */
+[dir="rtl"] .author__urls-wrapper {
+  text-align: right;
+}
+
+[dir="rtl"] .social-icons {
+  text-align: right;
+}
+
+/* RTL Typography adjustments */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: right;
+}
+
+[dir="rtl"] p {
+  text-align: right;
+}
+
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+  text-align: right;
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+/* RTL Blockquotes */
+[dir="rtl"] blockquote {
+  border-right: 4px solid #ffd700;
+  border-left: none;
+  padding-right: 1rem;
+  padding-left: 0;
+  margin-right: 0;
+  text-align: right;
+}
+
+/* RTL Tables */
+[dir="rtl"] table {
+  text-align: right;
+}
+
+[dir="rtl"] th,
+[dir="rtl"] td {
+  text-align: right;
+}
+
+/* RTL Forms */
+[dir="rtl"] .page__comments-form {
+  text-align: right;
+}
+
+[dir="rtl"] input,
+[dir="rtl"] textarea {
+  text-align: right;
+}
+
+/* RTL Buttons */
+[dir="rtl"] .btn {
+  text-align: center;
+}
+
+/* RTL Archive grid adjustments */
+[dir="rtl"] .grid__item {
+  text-align: right;
+}
+
+/* RTL language switcher styling */
+.language-switcher {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
+
+.language-switcher a {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.25rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.language-switcher a:hover {
+  background: #f0f0f0;
+}
+
+.language-switcher a.active {
+  background: #007acc;
+  color: #fff;
+  border-color: #007acc;
+}
+
+/* Arabic font optimizations */
+[dir="rtl"] {
+  font-family: "Amiri", "Noto Sans Arabic", "Arabic UI Display", "Geeza Pro",
+    "Dubai", "Segoe UI Arabic", "Times New Roman", serif;
+}
+
+/* Improve Arabic text rendering */
+[dir="rtl"] p,
+[dir="rtl"] li,
+[dir="rtl"] span {
+  line-height: 1.8;
+  word-spacing: 0.1em;
+}
+
+/* RTL specific responsive adjustments */
+@media (max-width: 64em) {
+  [dir="rtl"] .sidebar {
+    text-align: right;
+  }
+
+  [dir="rtl"] .author__avatar {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

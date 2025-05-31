@@ -4,17 +4,36 @@ main:
     url: /publications/
 
   - title: "Talks"
-    url: /talks/    
+    url: /talks/
 
   - title: "Teaching"
-    url: /teaching/    
-    
+    url: /teaching/
+
   - title: "Projects"
     url: /projects/
 
   - title: "Blog Posts"
     url: /year-archive/
-    
+
   - title: "CV"
     url: /cv/
-    
+
+# Arabic navigation
+main_ar:
+  - title: "المنشورات"
+    url: /ar/publications/
+
+  - title: "المحاضرات"
+    url: /ar/talks/
+
+  - title: "التدريس"
+    url: /ar/teaching/
+
+  - title: "المشاريع"
+    url: /ar/projects/
+
+  - title: "المدونة"
+    url: /ar/year-archive/
+
+  - title: "السيرة الذاتية"
+    url: /ar/cv/

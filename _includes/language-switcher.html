@@ -1,0 +1,94 @@
+<!-- Language Switcher Component -->
+<div class="language-switcher">
+  {% assign current_page = page.url %}
+
+  <!-- English -->
+  {% if page.lang == "ar" %} {% assign en_url = current_page | replace: "/ar/",
+  "/" %} {% else %} {% assign en_url = current_page %} {% endif %}
+
+  <!-- Arabic -->
+  {% if page.lang == "ar" %} {% assign ar_url = current_page %} {% else %} {%
+  assign ar_url = current_page | prepend: "/ar" %} {% endif %}
+
+  <a
+    href="{{ en_url | relative_url }}"
+    class="lang-switch {% if page.lang != 'ar' %}active{% endif %}"
+    title="English"
+  >
+    🇺🇸 EN
+  </a>
+
+  <a
+    href="{{ ar_url | relative_url }}"
+    class="lang-switch {% if page.lang == 'ar' %}active{% endif %}"
+    title="العربية"
+  >
+    🇪🇬 العربية
+  </a>
+</div>
+
+<style>
+  .language-switcher {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+  }
+
+  .lang-switch {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.125rem;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #495057;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .lang-switch:hover {
+    background: #e9ecef;
+    color: #212529;
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+
+  .lang-switch.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #0056b3;
+  }
+
+  /* RTL adjustments */
+  [dir="rtl"] .language-switcher {
+    right: auto;
+    left: 1rem;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .language-switcher {
+      position: relative;
+      top: auto;
+      right: auto;
+      margin: 1rem 0;
+      text-align: center;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      padding: 0;
+    }
+
+    [dir="rtl"] .language-switcher {
+      left: auto;
+    }
+  }
+</style>

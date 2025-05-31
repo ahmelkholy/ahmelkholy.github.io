@@ -7,19 +7,19 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ahmed M. ElKholy"
-title_separator          : "-"
+title                    : "Ahmed M. ElKholy - PhD Student & Power Systems Engineer"
+title_separator          : "|"
 name                     : &name "Ahmed M. ElKholy"
-description              : &description "personal description"
+description              : &description "PhD Student at MPEI | Assistant Lecturer at Tanta University | Expert in FACTS Devices, Industrial Protection & Decarbonization | MATLAB, Python, C, R, STM32 Developer"
 url                      : https://ahmelkholy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ahmelkholy/ahmelkholy.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+teaser                   : "bio-photo.jpg" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+read_more                : "enabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link             : true #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -50,71 +50,97 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
+google_site_verification : "YOUR_GOOGLE_SITE_VERIFICATION_CODE" # Get from Google Search Console
+bing_site_verification   : "YOUR_BING_VERIFICATION_CODE"
 alexa_site_verification  :
-yandex_site_verification :
+yandex_site_verification : "YOUR_YANDEX_VERIFICATION_CODE"
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "ahmelkholy"
 facebook:
-  username               :
+  username               : "ahm.m.elkholy"
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "bio-photo.jpg"  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Ahmed M. ElKholy" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - "https://www.linkedin.com/in/ahmelkholy/"
+    - "https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en"
+    - "https://github.com/ahmelkholy"
+    - "https://www.researchgate.net/profile/Ahmed-Elkholy-7"
+    - "https://orcid.org/0000-0002-1834-1175"
+    - "https://www.youtube.com/@ahmelkholy"
+    - "https://facebook.com/ahm.m.elkholy"
 
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-XXXXXXXXXX" # Replace with your Google Analytics 4 ID
+    anonymize_ip         : false # true, false (default)
+
+# Google Ads / AdSense Configuration
+google_ad_client         : "ca-pub-XXXXXXXXXXXXXXXXX" # Replace with your AdSense client ID
+google_ad_slot_responsive: "XXXXXXXXX" # Replace with your responsive ad slot ID
+google_ad_slot_article   : "XXXXXXXXX" # Replace with your in-article ad slot ID
+google_ad_slot_sidebar   : "XXXXXXXXX" # Replace with your sidebar ad slot ID
+google_ad_slot_footer    : "XXXXXXXXX" # Replace with your footer ad slot ID
+
+# Search Engine Verification (Enhanced)
+google_site_verification : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Google Search Console
+bing_site_verification   : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Bing Webmaster Tools
+yandex_site_verification : "XXXXXXXXXXXXXXXX" # Yandex Webmaster
+baidu_site_verification  : "XXXXXXXXXXXXXXXX" # Baidu Webmaster Tools
 
 
 # Site Author
 author:
-  name             : "Ahmed Elkholy"
+  name             : "Ahmed M. ElKholy"
   avatar           : "profile.png"
-  bio              :   "Driven electrical engineer and an experienced Assistant Lecturer at Tanta University with a passion for education and electrical engineering. M.Sc. in power systems and am currently pursuing my Ph.D. on MPEI. I am skilled in AutoCAD, Negotiation, English, Management, and Electrical Engineering, as well as programming languages such as SQL and Python. I aim to advance technologies and inspire future innovators through hands-on teaching and enthusiastic research collaborations."
-  location         : #"Location"
-  employer         :
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  bio              : "PhD Student at MPEI | Assistant Lecturer at Tanta University | Expert in FACTS Devices, Industrial Protection & Decarbonization | Software Developer (MATLAB, Python, C, R, STM32)"
+  location         : "Moscow, Russia / Tanta, Egypt"
+  employer         : "Moscow Power Engineering Institute (MPEI) / Tanta University"
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en"
-  email            : "ahmed_elkholy@f-eng.tanta.edu.eg"
+  email            : "ahm_elkholy@outlook.com"
   researchgate     : "https://www.researchgate.net/profile/Ahmed-Elkholy-7"
-  uri              : "http://tdb2.tanta.edu.eg/staff/ahmed_elkholy"
+  uri              : "https://ahmelkholy.github.io"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "ahm.m.elkholy"
   foursquare       :
   github           : "ahmelkholy"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      :
   lastfm           :
   linkedin         : "ahmelkholy"
   orcid            : "https://orcid.org/0000-0002-1834-1175"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
-  twitter          : #"replacethistwitterhandle"
+  twitter          : "ahmelkholy"
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "https://www.youtube.com/@ahmelkholy"
   wikipedia        :
+  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57202189065"
+  webofscience     : "https://www.webofscience.com/wos/author/record/AAS-9757-2020"
+  zotero           : "https://zotero.org/ahmelkholy"
+  sciprofiles      : "https://sciprofiles.com/profile/amelkholy"
+  university       : "https://tdb2.tanta.edu.eg/staff/ahmelkholy"
 
 
 # Reading Files
@@ -238,7 +264,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-  # _projects temp 
+  # _projects temp
   - scope:
       path: ""
       type: teaching
