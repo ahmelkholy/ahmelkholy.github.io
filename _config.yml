@@ -50,10 +50,10 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification : "YOUR_GOOGLE_SITE_VERIFICATION_CODE" # Get from Google Search Console
-bing_site_verification   : "YOUR_BING_VERIFICATION_CODE"
+google_site_verification : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enhanced - from Google Search Console
+bing_site_verification   : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Enhanced - from Bing Webmaster Tools
 alexa_site_verification  :
-yandex_site_verification : "YOUR_YANDEX_VERIFICATION_CODE"
+yandex_site_verification : "XXXXXXXXXXXXXXXX" # Enhanced - from Yandex Webmaster
 
 # Social Sharing
 twitter:
@@ -86,17 +86,12 @@ analytics:
     anonymize_ip         : false # true, false (default)
 
 # Google Ads / AdSense Configuration
-google_ad_client         : "ca-pub-XXXXXXXXXXXXXXXXX" # Replace with your AdSense client ID
-google_ad_slot_responsive: "XXXXXXXXX" # Replace with your responsive ad slot ID
-google_ad_slot_article   : "XXXXXXXXX" # Replace with your in-article ad slot ID
-google_ad_slot_sidebar   : "XXXXXXXXX" # Replace with your sidebar ad slot ID
-google_ad_slot_footer    : "XXXXXXXXX" # Replace with your footer ad slot ID
-
-# Search Engine Verification (Enhanced)
-google_site_verification : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Google Search Console
-bing_site_verification   : "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" # Bing Webmaster Tools
-yandex_site_verification : "XXXXXXXXXXXXXXXX" # Yandex Webmaster
-baidu_site_verification  : "XXXXXXXXXXXXXXXX" # Baidu Webmaster Tools
+# Uncomment and replace with your actual AdSense client ID when ready
+# google_ad_client         : "ca-pub-XXXXXXXXXXXXXXXXX" # Replace with your AdSense client ID
+# google_ad_slot_responsive: "XXXXXXXXX" # Replace with your responsive ad slot ID
+# google_ad_slot_article   : "XXXXXXXXX" # Replace with your in-article ad slot ID
+# google_ad_slot_sidebar   : "XXXXXXXXX" # Replace with your sidebar ad slot ID
+# google_ad_slot_footer    : "XXXXXXXXX" # Replace with your footer ad slot ID
 
 
 # Site Author

@@ -144,6 +144,6 @@ Feel free to reach out for:
 **ORCID**: [Your ORCID ID]
 **ResearchGate**: [Your ResearchGate Profile]
 
----
+<br>
 
 _"Empowering the future through innovative power systems engineering and sustainable energy solutions."_

@@ -1,5 +1,5 @@
 <!-- Google AdSense -->
-{% if site.google_ad_client %}
+{% if site.google_ad_client and site.google_ad_client != "ca-pub-XXXXXXXXXXXXXXXXX" %}
 <!-- Auto ads -->
 <script
   async
@@ -17,7 +17,7 @@
 {% endif %}
 
 <!-- Display Ad Units -->
-{% if page.ads != false and site.google_ad_client %}
+{% if page.ads != false and site.google_ad_client and site.google_ad_client != "ca-pub-XXXXXXXXXXXXXXXXX" %}
 <!-- Responsive Ad Unit -->
 <div class="ad-container" style="text-align: center; margin: 20px 0">
   <ins
@@ -35,7 +35,7 @@
 {% endif %}
 
 <!-- In-Article Ad Unit -->
-{% if include.type == "in-article" and site.google_ad_client %}
+{% if include.type == "in-article" and site.google_ad_client and site.google_ad_client != "ca-pub-XXXXXXXXXXXXXXXXX" %}
 <div class="ad-container" style="text-align: center; margin: 15px 0">
   <ins
     class="adsbygoogle"
@@ -52,7 +52,7 @@
 {% endif %}
 
 <!-- Sidebar Ad Unit -->
-{% if include.type == "sidebar" and site.google_ad_client %}
+{% if include.type == "sidebar" and site.google_ad_client and site.google_ad_client != "ca-pub-XXXXXXXXXXXXXXXXX" %}
 <div class="sidebar-ad" style="margin: 20px 0">
   <ins
     class="adsbygoogle"
@@ -69,7 +69,7 @@
 {% endif %}
 
 <!-- Footer Ad Unit -->
-{% if include.type == "footer" and site.google_ad_client %}
+{% if include.type == "footer" and site.google_ad_client and site.google_ad_client != "ca-pub-XXXXXXXXXXXXXXXXX" %}
 <div class="footer-ad" style="text-align: center; margin: 20px 0">
   <ins
     class="adsbygoogle"
