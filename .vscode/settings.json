@@ -1,9 +1,52 @@
 {
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#e9dbb7",
-    "activityBarBadge.background": "#e9dbb7",
-    "activityBarBadge.foreground": "#262626",
-    "statusBar.background": "#262626",
-    "statusBar.foreground": "#e9dbb7"
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "off"
+    }
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    ".archive": true,
+    ".bundle": true,
+    ".codex-local": true,
+    ".github": true,
+    ".jekyll-cache": true,
+    ".playwright-mcp": true,
+    ".tools": true,
+    ".vscode": true,
+    "_data": true,
+    "_includes": true,
+    "_layouts": true,
+    "_plugins": true,
+    "_publications": true,
+    "_site": true,
+    "vendor": true,
+    "review-artifacts": true,
+    "tests": true,
+    "scripts": true,
+    "maintenance": true,
+    "Gemfile": true,
+    "Gemfile.lock": true,
+    ".ruby-version": true,
+    ".gitignore": true,
+    "_config.yml": true,
+    "LICENSE": true,
+    "SITE_REBUILD_REPORT.md": true,
+    "robots.txt": true
+  },
+  "search.exclude": {
+    ".archive": true,
+    ".tools": true,
+    "vendor": true,
+    "_site": true,
+    "review-artifacts": true,
+    ".codex-local": true,
+    ".playwright-mcp": true
   }
 }

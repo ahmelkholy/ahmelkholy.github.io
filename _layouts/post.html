@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% assign ui = site.data.ui[page.lang] %}
+<article class="prose page">
+<header class="page-title"><a class="eyebrow" href="{{ '/articles/' | relative_url }}">{{ ui.back }}</a><h1>{{ page.title | escape }}</h1><p class="muted">{{ ui.published }} <time datetime="{{ page.date | date_to_xmlschema }}" data-local-date="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y-%m-%d' }}</time></p>{% include translations.html %}</header>
+{% if page.toc %}<details class="toc" data-toc hidden><summary>{{ ui.contents }}</summary><ul></ul></details>{% endif %}
+<div class="article-body">{{ content }}</div>
+{% if page.tags.size > 0 %}<ul class="tags" aria-label="Tags">{% for tag in page.tags %}<li><a href="{{ '/tags/' | relative_url }}#{{ tag | slugify: 'raw' | uri_escape }}">{{ tag }}</a></li>{% endfor %}</ul>{% endif %}
+</article>

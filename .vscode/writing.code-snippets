@@ -1,0 +1,27 @@
+{
+  "Article front matter": {
+    "scope": "markdown",
+    "prefix": "post",
+    "description": "Minimal English/Arabic/Russian post header",
+    "body": [
+      "---",
+      "title: \"${1:Title}\"",
+      "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "lang: ${2|en,ar,ru|}",
+      "tags: []",
+      "---",
+      "",
+      "$0"
+    ]
+  },
+  "Image with caption": {
+    "scope": "markdown",
+    "prefix": "figure",
+    "body": [
+      "<figure>",
+      "  <img src=\"/images/${1:filename.png}\" alt=\"${2:Description}\" loading=\"lazy\">",
+      "  <figcaption>${3:Caption}</figcaption>",
+      "</figure>"
+    ]
+  }
+}

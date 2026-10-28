@@ -1,16 +1,13 @@
 ---
-layout: archive
-title: "Talks and presentations"
+layout: page
+title: Talks & presentations
 permalink: /talks/
-author_profile: true
+description: Talks, presentations and shared materials by Ahmed M. Elkholy.
 ---
-
-{% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+{% assign talks = site.talks | sort: 'date' | reverse %}
+{% if talks.size > 0 %}
+<ul class="article-list">{% for talk in talks %}<li><div class="list-meta">{% if talk.date %}<time datetime="{{ talk.date | date_to_xmlschema }}">{{ talk.date | date: '%Y-%m-%d' }}</time>{% endif %}<span>{{ talk.lang | upcase }}</span></div><h2 lang="{{ talk.lang }}" dir="{% if talk.lang == 'ar' %}rtl{% else %}ltr{% endif %}"><a href="{{ talk.url | relative_url }}">{{ talk.title | escape }}</a></h2>{% if talk.venue %}<p class="muted">{{ talk.venue | escape }}</p>{% endif %}</li>{% endfor %}</ul>
+{% else %}
+<p>Talks, presentation slides and related materials will be collected here as they become available.</p>
+<p>For now, you can explore my <a href="{{ '/publications/' | relative_url }}">publications</a> or <a href="{{ '/contact/' | relative_url }}">contact me</a>.</p>
 {% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}

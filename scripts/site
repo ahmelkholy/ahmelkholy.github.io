@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+if [[ -x .tools/ruby/bin/ruby ]]; then
+  export PATH="$PWD/.tools/ruby/bin:$PATH"
+fi
+case "${1:-preview}" in
+  preview) exec bundle exec jekyll serve --host 127.0.0.1 --port 4000 ;;
+  check)
+    JEKYLL_ENV=production bundle exec jekyll build
+    python3 scripts/check_site.py
+    python3 tests/search_metadata.py
+    ;;
+  *) echo 'Usage: bash scripts/site [preview|check]' >&2; exit 2 ;;
+esac

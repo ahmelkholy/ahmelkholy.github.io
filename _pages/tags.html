@@ -1,0 +1,6 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+{% assign tags = site.tags | sort %}{% for tag in tags %}<section><h2 id="{{ tag[0] | slugify: 'raw' }}" dir="auto">{{ tag[0] }}</h2><ul>{% for post in tag[1] %}<li dir="auto"><a href="{{ post.url | relative_url }}" lang="{{ post.lang }}">{{ post.title | escape }}</a></li>{% endfor %}</ul></section>{% endfor %}

@@ -1,0 +1,8 @@
+{% assign ui = site.data.ui[page.lang] %}
+
+<p>{{ ui.writing_intro }}</p>
+<p><a href="{{ "/tags/" | relative_url }}">{{ ui.tags }}</a></p>
+<div class="filters" data-filters data-default-lang="{{ page.filter_lang | default: "all" }}" data-empty="{{ ui.empty }}" data-russian-empty="{{ ui.russian_empty }}" data-count-label="{{ ui.article_count }}" hidden><div class="filter-field"><label for="language">{{ ui.language }}</label><select id="language"><option value="all">{{ ui.all }}</option><option value="en">English</option><option value="ar">العربية</option><option value="ru">Русский</option></select></div><div class="filter-field"><label for="query">{{ ui.search }}</label><input id="query" type="search" placeholder="{{ ui.search }}" autocomplete="off"></div></div>
+<p data-filter-status role="status" class="muted"></p>
+<ul class="article-list" data-articles>{% for post in site.posts %}<li data-lang="{{ post.lang }}" data-search="{{ post.title | append: ' ' | append: post.tags | downcase | escape }}"><div class="list-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time><span>{{ post.lang | upcase }}</span></div><h2 lang="{{ post.lang }}" dir="{% if post.lang == 'ar' %}rtl{% else %}ltr{% endif %}"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2><p lang="{{ post.lang }}" dir="{% if post.lang == 'ar' %}rtl{% else %}ltr{% endif %}" class="muted">{{ post.excerpt | strip_html | truncate: 180 }}</p></li>{% endfor %}</ul>
+<noscript><p>{{ ui.nojs }}</p></noscript>

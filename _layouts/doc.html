@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% assign ui = site.data.ui[page.lang] %}
+<article class="prose page">
+<p class="eyebrow"><a href="{{ '/docs/' | relative_url }}">{{ ui.docs }}</a> / <a href="{{ page.doc_home | default: '/docs/authoring/' | relative_url }}">{{ page.doc_title | default: 'Authoring example' | escape }}</a></p>
+<h1>{{ page.title | escape }}</h1>
+{% include translations.html %}
+{% if page.toc %}<details class="toc" data-toc hidden><summary>{{ ui.contents }}</summary><ul></ul></details>{% endif %}
+<div class="article-body">{{ content }}</div>
+</article>

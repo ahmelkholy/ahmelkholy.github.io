@@ -1,0 +1,4 @@
+{% if page.translation_key %}
+{% assign candidates = site.pages | concat: site.posts | concat: site.talks %}{% assign counterparts = candidates | where: 'translation_key', page.translation_key %}
+{% if counterparts.size > 1 %}<nav class="translations" aria-label="{{ ui.translations }}"><span>{{ ui.translations }}:</span>{% for other in counterparts %}{% unless other.url == page.url %}<a href="{{ other.url | relative_url }}" lang="{{ other.lang }}" hreflang="{{ other.lang }}" dir="auto">{% case other.lang %}{% when 'ar' %}العربية{% when 'ru' %}Русский{% else %}English{% endcase %}</a>{% endunless %}{% endfor %}</nav>{% endif %}
+{% endif %}

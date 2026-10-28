@@ -1,0 +1,37 @@
+{% assign canonical = page.url | absolute_url %}
+{% assign summary = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 180 %}
+{% assign preview_image = page.image | default: '/images/profile.png' | absolute_url %}
+<meta name="robots" content="{% if page.sitemap == false %}noindex, follow{% else %}index, follow, max-image-preview:large{% endif %}">
+<meta property="og:image" content="{{ preview_image }}">
+<meta property="og:image:alt" content="{{ page.image_alt | default: 'Ahmed M. Elkholy' | escape }}">
+<meta name="twitter:card" content="summary">
+{% if site.google_site_verification != '' and site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification | escape }}">{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  {% if page.layout == 'post' %}
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify | replace: '<', '\u003c' }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  {% if page.last_modified_at %}"dateModified": {{ page.last_modified_at | date_to_xmlschema | jsonify }},{% endif %}
+  "mainEntityOfPage": {{ canonical | jsonify }},
+  "author": {"@type": "Person", "@id": "{{ site.url }}/#person", "name": {{ site.name | jsonify }}, "url": "{{ '/cv/' | absolute_url }}"},
+  {% if page.image %}"image": {{ page.image | absolute_url | jsonify }},{% endif %}
+  {% elsif page.translation_key == 'profile' %}
+  "@type": "ProfilePage",
+  "name": {{ page.title | jsonify | replace: '<', '\u003c' }},
+  "mainEntity": {"@type": "Person", "@id": "{{ site.url }}/#person", "name": {{ site.name | jsonify }}, "url": "{{ '/cv/' | absolute_url }}", "image": "{{ '/images/profile.png' | absolute_url }}", "jobTitle": "Electrical Power Engineer", "sameAs": ["https://orcid.org/0000-0002-1834-1175", "https://github.com/ahmelkholy", "https://www.linkedin.com/in/ahmelkholy/", "https://www.youtube.com/@ahmelkholy"]},
+  {% elsif page.url == '/' %}
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "publisher": {"@type": "Person", "@id": "{{ site.url }}/#person", "name": {{ site.name | jsonify }}, "url": "{{ '/cv/' | absolute_url }}"},
+  {% else %}
+  "@type": "WebPage",
+  "name": {{ page.title | jsonify | replace: '<', '\u003c' }},
+  "isPartOf": {"@type": "WebSite", "url": {{ site.url | jsonify }}},
+  {% endif %}
+  "url": {{ canonical | jsonify }},
+  "description": {{ summary | jsonify | replace: '<', '\u003c' }},
+  "inLanguage": {{ page.lang | default: 'en' | jsonify }}
+}
+</script>

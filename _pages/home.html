@@ -1,0 +1,17 @@
+---
+description: "Ahmed M. Elkholy: electrical power engineering, research, software projects, and articles in English and Arabic."
+layout: default
+title: Engineering, software & writing
+permalink: /
+---
+<section class="hero">
+<p class="eyebrow">Welcome to my personal website</p>
+<h1>Power systems.<br>Software. <em>Ideas.</em></h1>
+<p class="intro">I’m Ahmed, an electrical power engineer working on power-system studies, modelling and engineering software.</p>
+<p class="muted">Here I share engineering articles, research, project documentation and thoughts about the world. You’ll find writing in English and Arabic, with room for Russian too.</p>
+<div class="hero-links"><a href="{{ '/articles/' | relative_url }}">Read the articles <span aria-hidden="true">↗</span></a><a href="{{ '/cv/' | relative_url }}">More about me</a></div>
+</section>
+<section class="home-section"><div class="section-heading"><h2>Writing & notes</h2><a href="{{ '/articles/' | relative_url }}">View all writing →</a></div>
+<ul class="article-list">{% for post in site.posts limit: 3 %}<li><div class="list-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time><span>{{ post.lang | upcase }}</span></div><h3 lang="{{ post.lang }}" dir="{% if post.lang == 'ar' %}rtl{% else %}ltr{% endif %}"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3></li>{% endfor %}</ul></section>
+<section class="home-section"><div class="section-heading"><h2>Work in progress</h2><a href="{{ '/projects/' | relative_url }}">Projects →</a></div><p class="feature-title"><a href="{{ '/projects/#aimora' | relative_url }}">AIMORA</a></p><p class="intro">A modular Julia platform for power-system analysis. Current development covers EMT simulation, equipment parameters, project interfaces and numerical tests.</p><p><a href="{{ '/publications/' | relative_url }}">Research publications</a> <span class="muted">/</span> <a href="{{ '/docs/' | relative_url }}">Documentation</a></p></section>
+<section class="home-section"><div class="section-heading"><h2>Recent research</h2><a href="{{ '/publications/' | relative_url }}">All publications →</a></div><h3 class="research-title"><a href="https://doi.org/10.1016/j.epsr.2026.113505">Statistically robust genetic algorithm planning of EV fast-charging corridors under grid and storage constraints</a></h3><p class="muted small">Electric Power Systems Research · 2026 · Online publication, December issue</p></section>

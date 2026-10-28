@@ -1,0 +1,110 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "New post",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/new_post.py",
+        "${input:postSlug}",
+        "--title",
+        "${input:postTitle}",
+        "--lang",
+        "${input:postLanguage}",
+        "--open"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "New draft",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/new_post.py",
+        "${input:postSlug}",
+        "--title",
+        "${input:postTitle}",
+        "--lang",
+        "${input:postLanguage}",
+        "--open",
+        "--draft"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "New talk",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/new_post.py",
+        "${input:postSlug}",
+        "--title",
+        "${input:postTitle}",
+        "--lang",
+        "${input:postLanguage}",
+        "--open",
+        "--talk"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Preview website",
+      "type": "process",
+      "command": "bash",
+      "args": [
+        "${workspaceFolder}/scripts/site",
+        "preview"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Check website",
+      "type": "process",
+      "command": "bash",
+      "args": [
+        "${workspaceFolder}/scripts/site",
+        "check"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "postTitle",
+      "type": "promptString",
+      "description": "Article title — English, Arabic or Russian"
+    },
+    {
+      "id": "postSlug",
+      "type": "promptString",
+      "description": "Short URL name, e.g. transformer-notes (letters, numbers, hyphens)"
+    },
+    {
+      "id": "postLanguage",
+      "type": "pickString",
+      "description": "Article language",
+      "options": [
+        "en",
+        "ar",
+        "ru"
+      ],
+      "default": "en"
+    }
+  ]
+}

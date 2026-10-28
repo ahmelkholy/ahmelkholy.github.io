@@ -1,71 +1,97 @@
 ---
-layout: archive
-title: "CV"
+description: "Electrical power engineer, MPEI researcher and Assistant Lecturer at Tanta University. Experience, education, engineering software and a downloadable CV."
+title: About & CV
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+translation_key: profile
+redirect_from: [/about/, /about.html]
 ---
 
-{% include base_path %}
+[Download the public CV (PDF)](/files/Ahmed_M_Elkholy-cv.pdf) · [العربية](/ar/) · [Русский](/ru/)
 
-# Education
+**Electrical Power Engineer | Power-System Studies, Modelling & Engineering Software**
 
-- B.S. in Electrical Power and Machines Engineering, Tanta University, Egypt, 2014
-- M.Sc. in Electrical Engineering, Tanta University, Egypt, 2019
-- Ph.D. in Electrical Engineering (in progress), Moscow Power Engineering Institute, Russia
+[ahmed_elkholy@f-eng.tanta.edu.eg](mailto:ahmed_elkholy@f-eng.tanta.edu.eg) | [ahm_elkholy@outlook.com](mailto:ahm_elkholy@outlook.com)
 
-# Work experience
+[LinkedIn](https://www.linkedin.com/in/ahmelkholy/) | [GitHub](https://github.com/ahmelkholy) | [ORCID](https://orcid.org/0000-0002-1834-1175) | [Google Scholar](https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en)
 
-- July 2019 - Present: Assistant Lecturer, Faculty of Engineering, Tanta University, Egypt
+## Profile
+Electrical power engineer with experience in transformer commissioning tests, equipment modelling, reactive-power compensation and ETAP studies for industrial and PV projects. Researcher at MPEI and Assistant Lecturer at Tanta University, pursuing a PhD with completion expected in December 2026. Also contributes to utility equipment specifications and develops power-system analysis software in Julia and Python.
 
-  - Responsibilities: Supporting the design, development, and production of learning and teaching material, delivering teaching programs, ensuring efficient delivery of teaching programs.
+## Engineering Experience
 
-- March 2016 - July 2019: Demonstrator, Faculty of Engineering, Tanta University, Egypt
+**Researcher / R&D Engineer — MPEI, Industrial Electronics Department** | October 2023–present
 
-  - Responsibilities: Assisting and providing guidance to students in practical exercises, maintaining a safe environment, providing feedback on student performance, marking student tests, ensuring equipment and materials are prepared.
+- **Zigzag-transformer commissioning and modelling:** Participated in zigzag-transformer commissioning tests and developed a variable-impedance model in MATLAB/Simulink using test measurements. Compared model predictions with measured system behaviour at 50 Hz.
+- **Thyristor-switched SVC:** Contributed to modelling and performance assessment of a departmental 50 kvar, 0.4 kV prototype, using R to analyse two months of distribution-grid operating data. The device uses a tap-switched transformer and capacitor with IoT telemetry.
+- **Shunt regulation:** Developed power-circuit and Simulink/Simscape Electrical models, a phase-power calculation module, and genetic-algorithm coordination of two compensators on the IEEE 13-bus feeder in simulation.
 
-- October 2020 - Present: Ph.D. Student, National Research University "Moscow Power Engineering Institute", Russia
+**Independent Power-System Studies — ETAP** | Project-based, 2024–present
 
-  - Studying towards a Ph.D. in Electrical Engineering
+- Prepared load-flow, short-circuit, arc-flash and protection-setting studies for industrial and PV projects, with engineering reports for client review.
+- Evaluated a capacitor bank with 7% detuned reactors for a 480 V motor control centre, comparing load flow with and without compensation and reviewing protection.
+- Analysed short-circuit levels for a PV installation with vanadium, lithium-ion and lead-acid battery sources across seven operating scenarios.
 
-# Skills
+**Engineering Specifications Contributor — Power Consult** | Project-based, 2026–present
 
-- Programming languages: SQL, Python
-- Version control: Git, Github
+- Contribute to material specifications and inspection/test plans for energy-storage and controller equipment on a Saudi utility project, currently under committee review.
+- Resolve technical review comments, revise specifications and maintain standards references and meeting actions.
 
-# Publications
+## Engineering Software and Planning
 
-<ul>
-  <li>[1] A. M. Elkholy, H. A. A. El-Ghany, and A. M. Azmy, "A proposed load shedding mechanism for enhancing intentional-islanding dynamics of distribution systems," in 2017 Nineteenth International Middle East Power Systems Conference (MEPCON), 2017, pp. 870-875: IEEE.</li>
-  <li>[2] A. M. Elkholy, H. A. A. El-Ghany, and A. M. Azmy, "An Advanced Load Shedding Algorithm to Enhance Intentional-Islanding Dynamics," in 2018 Twentieth International Middle East Power Systems Conference (MEPCON), 2018, pp. 797-802: IEEE.</li>
-  <li>[3] A. M. Elkholy, H. A. Abd el-Ghany, and A. M. Azmy, “General Framework for Intentional Islanding to Enhance Distribution System Performance,” Electr. Power Components Syst., vol. 48, no. 14–15, pp. 1488–1507, 2020, doi: 10.1080/15325008.2020.1856227.</li>
-  <li>[4] M. G. Hussien, A. M. Elkholy, D. -E. A. Mansour, M. M. Akl, M. Numair and I. A. Soliman, "Performance Enhancement of Wave Energy Converters Integrated with DC Grids Using Energy Storage Systems," 2021 22nd International Middle East Power Systems Conference (MEPCON), 2021, pp. 77-83, doi: 10.1109/MEPCON50283.2021.9686294.</li>
-  <li>[5] A. Soliman, M. Numair, M. M. Akl, D. -E. A. Mansour, A. M. Elkholy and M. G. Hussien, "Hosting Capacity Enhancement Through IoT-based Active Power Curtailment of PV Generation," 2021 22nd International Middle East Power Systems Conference (MEPCON), 2021, pp. 259-264, doi: 10.1109/MEPCON50283.2021.9686240.</li>
-</ul>
+**AIMORA — lead developer** | 2026–present
 
-# Talks
+- Developing a modular Julia platform for power-system analysis, with current work on EMT simulation, line, cable and transformer parameters, project/study interfaces and numerical tests.
+- Public components: [AIMORA.jl](https://github.com/AIMORA-dev/AIMORA.jl), [Platform](https://github.com/AIMORA-dev/AIMORAPlatform) and [Resources](https://github.com/AIMORA-dev/AIMORAResources). Broader study modules and the desktop client are planned.
 
-<ul>
-  <li>The 19th IEEE International Middle East Power Systems Conference (MEPCON'17), Cairo, Egypt, 27-29 December 2016</li>
-  <li>The 20th IEEE International Middle East Power Systems Conference (MEPCON'18), Cairo, Egypt, 18-20 December 2016</li>
-  <li>The 21st IEEE International Middle East Power Systems Conference (MEPCON'19), Cairo, Egypt, 17-19 December 2016</li>
-</ul>
+**EV fast-charging corridor planning — lead author and software developer**
 
-# Teaching
+- Developed Python genetic-algorithm software to locate and size fast chargers under traffic, grid, storage and renewable-energy constraints. Evaluated five scenarios over a 669 km motorway corridor, with 50 runs in total; published the simulation study in *Electric Power Systems Research*.
 
-<ul>
-  <li>Assistant Lecturer, Faculty of Engineering, Tanta University, Egypt</li>
-</ul>
+**Other tools:** [IEEE13-optimization](https://github.com/ahmelkholy/IEEE13-optimization), for unified power controller settings; [Zthevenin](https://github.com/ahmelkholy/Zthevenin), for Thevenin-impedance calculations in MATLAB.
 
-# Service and leadership
 
-- Egyptian Engineering Syndicate (2014 - Present)
 
-# Additional information
+## Technical Skills
 
-- Language Skills:
+- **Power-system studies:** ETAP, NEPLAN, DIgSILENT PowerFactory and PSCAD; load flow, short circuit, arc flash, protection settings, capacitor compensation, PV and battery-source scenarios; small-signal and transient stability, harmonic analysis.
+- **Modelling and analysis:** MATLAB/Simulink, Simscape Electrical, parameter fitting from measurements, genetic algorithms, unbalanced distribution networks.
+- **Power electronics:** thyristor-based compensation, shunt regulators, arc-suppression devices and power quality.
+- **Programming and documentation:** Python, Julia, R, SQL, Git/GitHub and LaTeX; engineering reports, specifications and inspection/test plans.
 
-  - Arabic (Mother tongue)
-  - English: Listening (B2), Reading (A1), Spoken production (C1), Spoken interaction (A1), Writing (B1)
-  - Russian: Listening (A1), Reading (B1), Spoken production (A1), Spoken interaction (B1), Writing (A1)
+## Education and Academic Appointments
+
+**PhD studies in Electrical Engineering — MPEI, Russia** | In progress; expected December 2026
+
+Research: managing operating conditions in distribution networks with unbalanced loads using shunt regulation devices. Supervisor: Prof. Dmitry I. Panfilov.
+
+**MSc in Electrical Power and Machines Engineering — Tanta University** | 2016–2019
+
+Thesis: *Islanding Scenarios for High Reliable Operation of Distribution Networks.* Supervisor: Prof. Ahmed Refat Azmy.
+
+**BSc in Electrical Power and Machines Engineering — Tanta University** | 2009–2014
+
+Renewable-energy project: *The Impact of Large Wind Energy Penetration on the Performance of Electric Power Systems.* Supervisor: Prof. Ahmed Refat Azmy. Grade: Excellent (99%).
+
+**Assistant Lecturer — Tanta University** | July 2019–present
+
+Tutorials, laboratory teaching, assessment and student project supervision. Previously **Demonstrator**, March 2016–July 2019.
+
+## Selected Publications
+
+Full publication list: [Google Scholar](https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en).
+
+1. A. M. Elkholy, D. I. Panfilov, A. N. Rozhkov, A. V. Badalyan, I. A. Cherdintsev. **Statistically robust genetic algorithm planning of EV fast-charging corridors under grid and storage constraints.** *Electric Power Systems Research*, 2026, vol. 261, art. 113505 (December issue). [DOI](https://doi.org/10.1016/j.epsr.2026.113505)
+
+2. A. M. Elkholy, A. V. Chasov, D. I. Panfilov. **Statistical approach to non-invasive modeling of zigzag transformers using variable impedance.** *e-Prime*, 2025, vol. 14, art. 101135. [DOI](https://doi.org/10.1016/j.prime.2025.101135)
+
+3. R. N. Krasnoperov, D. I. Panfilov, M. G. Astachev, A. M. Elkholy. **Performance evaluation of a low-voltage SVC utilizing IoT streamed data for distribution systems.** *Electric Power Systems Research*, 2025, vol. 239, art. 111187. [DOI](https://doi.org/10.1016/j.epsr.2024.111187)
+
+4. A. M. Elkholy, D. I. Panfilov, M. G. Astachev. **Arc Suppression Devices for Mitigating Single Line-to-Ground Faults and Enhancing Power System Resilience.** *IEEE Transactions on Industry Applications*, 2026, vol. 62, no. 1, pp. 596–607. [DOI](https://doi.org/10.1109/tia.2025.3585858)
+
+## Languages and Professional Development
+
+**Languages:** Arabic (native); English (professional working proficiency); Russian (basic to intermediate).
+Programming for Data Science for Enterprise Nanodegree, Udacity (2019); Faculty and Leadership Development Centre, Tanta University (2019); Egyptian Engineers Syndicate member since 2014.
+
+
+[Website](https://ahmelkholy.github.io/) | [LinkedIn](https://www.linkedin.com/in/ahmelkholy/) | [Google Scholar](https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en) | [GitHub](https://github.com/ahmelkholy) | [YouTube](https://www.youtube.com/@ahmelkholy)

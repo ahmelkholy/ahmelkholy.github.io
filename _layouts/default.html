@@ -1,36 +1,47 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-    <style>
-      body {
-        text-align: justify;
-      }
-    </style>
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+{% assign lang = page.lang | default: 'en' %}{% assign ui = site.data.ui[lang] %}
+<html lang="{{ lang }}" dir="{% if lang == 'ar' %}rtl{% else %}ltr{% endif %}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+<meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 180 | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+{% feed_meta %}
+{% include search-metadata.html %}
+<script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
+{% if page.math %}<script defer src="{{ '/assets/js/mathjax/tex-mml-chtml.js' | relative_url }}"></script>{% endif %}
+{% if page.translation_key %}{% assign candidates = site.pages | concat: site.posts | concat: site.talks %}{% for other in candidates %}{% if other.translation_key == page.translation_key %}<link rel="alternate" hreflang="{{ other.lang }}" href="{{ other.url | absolute_url }}">{% endif %}{% endfor %}{% endif %}
+</head>
+<body>
+<a class="skip" href="#main">{{ ui.skip }}</a>
+<header class="site-header shell">
+<div class="header-top"><a class="wordmark" href="{{ '/' | relative_url }}" lang="en" dir="ltr">Ahmed M. Elkholy<span>ENGINEERING · SOFTWARE · IDEAS</span></a>
+<nav class="header-languages" aria-label="Profile languages"><a href="{{ '/cv/' | relative_url }}" lang="en">EN</a><a href="{{ '/ar/' | relative_url }}" lang="ar">العربية</a><a href="{{ '/ru/' | relative_url }}" lang="ru">RU</a></nav></div>
+<nav class="main-nav" aria-label="{{ ui.home }}">
+{% assign routes = '/,/articles/,/projects/,/docs/,/publications/,/talks/,/cv/,/contact/' | split: ',' %}
+{% assign keys = 'home,articles,projects,docs,publications,talks,cv,contact' | split: ',' %}
+{% for route in routes %}{% assign key = keys[forloop.index0] %}{% assign target = route %}{% if lang != 'en' and key == 'articles' %}{% assign target = '/' | append: lang | append: '/articles/' %}{% elsif lang != 'en' and key == 'cv' %}{% assign target = '/' | append: lang | append: '/' %}{% endif %}<a href="{{ target | relative_url }}"{% if page.url == target %} aria-current="page"{% elsif route != '/' and page.url contains route %} aria-current="page"{% elsif route == '/articles/' and page.layout == 'post' %} aria-current="page"{% endif %}>{{ ui[key] }}</a>{% endfor %}
+</nav>
+</header>
+<div class="site-grid shell">
+<aside class="profile" aria-label="{% if lang == 'ar' %}نبذة عن المؤلف{% else %}Author profile{% endif %}">
+<a href="{{ '/cv/' | relative_url }}" class="portrait-link"><img class="portrait" src="{{ '/images/profile.png' | relative_url }}" alt="Ahmed M. Elkholy" width="160" height="160"></a>
+<div class="profile-intro"><p class="profile-name">{% if lang == 'ar' %}أحمد م. الخولي{% else %}Ahmed M. Elkholy{% endif %}</p><p class="profile-role">{% if lang == 'ar' %}مهندس قوى كهربائية<br>باحث ومطور برمجيات{% else %}Electrical power engineer<br>Researcher & software developer{% endif %}</p></div>
+<div class="profile-details"><p>{% if lang == 'ar' %}باحث في معهد موسكو للطاقة<br>مدرس مساعد بجامعة طنطا{% else %}Researcher at MPEI<br>Assistant Lecturer at Tanta University{% endif %}</p><p class="small">{% if lang == 'ar' %}دكتوراه قيد الإنجاز<br>متوقع: ديسمبر 2026{% else %}PhD in progress<br>Expected December 2026{% endif %}</p>
+<a class="cv-button" href="{{ '/files/Ahmed_M_Elkholy-cv.pdf' | relative_url }}">{% if lang == 'ar' %}السيرة الذاتية{% else %}Download CV{% endif %} <span>PDF ↗</span></a>
+<div class="profile-links"><a href="mailto:ahm_elkholy@outlook.com">Email</a><a href="https://github.com/ahmelkholy">GitHub</a><a href="https://www.linkedin.com/in/ahmelkholy/">LinkedIn</a><a href="https://www.youtube.com/@ahmelkholy">YouTube</a></div>
+</div>
+</aside>
+<main id="main" tabindex="-1">{{ content }}</main>
+</div>
+<footer class="site-footer shell"><p>{{ ui.footer }}</p><div><a href="{{ '/feed.xml' | relative_url }}">RSS</a><a href="https://github.com/ahmelkholy">GitHub</a><a href="https://www.youtube.com/@ahmelkholy">YouTube</a><a href="{{ '/terms/' | relative_url }}">Privacy</a></div><p class="small">© {{ site.time | date: '%Y' }} Ahmed M. Elkholy · Built with Jekyll</p></footer>
+</body>
 </html>

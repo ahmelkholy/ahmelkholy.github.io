@@ -79,3 +79,16 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+.tools/
+.bundle/
+vendor/
+node_modules/
+.jekyll-cache/
+review-artifacts/
+
+.codex-local/
+
+.playwright-mcp/
+
+.DS_Store
