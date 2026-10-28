@@ -1,6 +1,6 @@
 # Website rebuild — local review
 
-Completed locally on 28 October 2026. No commit, push, publication or remote settings change was made. No other agent/session was started. Work was limited to this website repository; the named public profile sources were read only.
+Initial local rebuild completed on 28 October 2026. The user subsequently authorized pushing; the successful deployment is recorded at the end of this report. No remote settings change was made. No other agent/session was started. Work was limited to this website repository; the named public profile sources were read only.
 
 ## Preview
 
@@ -80,7 +80,7 @@ Imported bundles must be configured for their actual `/docs/<project>/` prefix. 
 
 Only `.github/workflows/pages.yml` is active. It builds and validates on pushes to the actual default branch **master** and manual dispatch, then uploads/deploys the Pages artifact. Dependencies are locked. Three old competing workflows were archived.
 
-Read-only GitHub inspection confirmed **Pages source = GitHub Actions** (`build_type: workflow`) and enforced HTTPS. No one-time setting change appears necessary. If later disabled, select **Settings → Pages → Source → GitHub Actions** and ensure the `github-pages` environment allows `master`. Review and push only when ready. Remote CI/deployment was deliberately not run or claimed tested.
+Read-only GitHub inspection confirmed **Pages source = GitHub Actions** (`build_type: workflow`) and enforced HTTPS. No one-time setting change appears necessary. If later disabled, select **Settings → Pages → Source → GitHub Actions** and ensure the `github-pages` environment allows `master`. Review and push only when ready. Remote CI/deployment was initially deferred; the later user-authorized deployment is recorded below.
 
 Version-specific setup was checked against official [Jekyll installation](https://jekyllrb.com/docs/installation/macos/), [configuration](https://jekyllrb.com/docs/configuration/options/), [posts](https://jekyllrb.com/docs/posts/), [GitHub Pages custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), [checkout](https://github.com/actions/checkout), [ruby/setup-ruby](https://github.com/ruby/setup-ruby), and [MathJax 3 self-hosting](https://docs.mathjax.org/en/v3.2/web/hosting.html) documentation. MathJax 3.2.2 is intentionally vendored for the optional Kramdown math path, with its licence; it is not described as the newest MathJax release.
 
@@ -98,3 +98,14 @@ Updated after the user’s subsequent requests:
 - Added `maintenance/GOOGLE_INDEXING.md` with URL-prefix verification and sitemap submission instructions. Google account verification/submission remains for the user after publishing; indexing and ranking cannot be guaranteed. No push or search-engine submission was made.
 
 Follow-up validation: production build and all 69 generated-page checks passed; 44 normal pages passed JSON-LD, canonical, description and robots validation. New-talk authoring, existing en/ar/ru authoring, draft/future exclusion and static import tests passed. A supplied verification token was checked in an isolated fixture. Six affected routes at desktop/mobile sizes (12 checks) passed the Chromium/axe audit with eight visible navigation tabs, no overflow and no detected WCAG A/AA violations. The Talks tab was clicked and its target verified. The local CV page and PDF retain email-only direct contact details. Updated screenshots include `review-artifacts/talks-mobile.png` and `review-artifacts/cv-no-phone.png`.
+
+
+## Authorized publication — 28 October 2026
+
+The user explicitly requested “please push it”. The rebuild was committed as `00e0505d75af81eb6eb353253c1f053249f0e7db` and pushed normally to `origin/master`, without rewriting history. GitHub Actions run [40753483327](https://github.com/ahmelkholy/ahmelkholy.github.io/actions/runs/40753483327) completed both build/validation and deployment successfully.
+
+Live checks returned HTTP 200 for the home page, `/talks/`, `/ar/`, `/cv/`, `/sitemap.xml` and `/robots.txt`. The live public PDF was downloaded and compared byte-for-byte with the phone-free local PDF. A Chromium check clicked the live Talks tab and verified its heading and all eight navigation links. The site is live at https://ahmelkholy.github.io/.
+
+The workflow emitted non-blocking GitHub runner/Node migration notices; all jobs succeeded. Vendored MathJax contains upstream whitespace and the contact Markdown uses an intentional hard line break; a staged whitespace check reported these, rather than a build or runtime defect. The initial working-tree-only whitespace check did not include those then-untracked vendor files.
+
+Search Console verification and sitemap submission remain an owner-account step; no Google indexing or ranking outcome is claimed. This report update changes excluded maintenance documentation only and does not require another site deployment.
