@@ -23,7 +23,10 @@
     "russian_empty": "No Russian articles yet. The Russian profile is available from About & CV.",
     "article_count": "articles",
     "nojs": "All articles are listed above. Use your browser’s Find command to search this page.",
-    "talks": "Talks"
+    "talks": "Talks",
+    "navigation": "Navigation",
+    "back_top": "Back to top",
+    "follow": "Follow new posts"
   },
   "ar": {
     "home": "الرئيسية",
@@ -49,7 +52,10 @@
     "russian_empty": "لا توجد مقالات باللغة الروسية حتى الآن. تتوفر النبذة الشخصية باللغة الروسية.",
     "article_count": "مقالات",
     "nojs": "جميع المقالات معروضة أعلاه. يمكنك استخدام البحث في المتصفح للبحث في الصفحة.",
-    "talks": "المحاضرات"
+    "talks": "المحاضرات",
+    "navigation": "التنقل",
+    "back_top": "العودة إلى الأعلى",
+    "follow": "متابعة المقالات"
   },
   "ru": {
     "home": "Главная",
@@ -75,6 +81,9 @@
     "russian_empty": "Статей на русском пока нет. Доступна русская страница обо мне.",
     "article_count": "записей",
     "nojs": "Все записи показаны выше. Используйте поиск браузера для поиска на странице.",
-    "talks": "Выступления"
+    "talks": "Выступления",
+    "navigation": "Навигация",
+    "back_top": "Наверх",
+    "follow": "Следить за записями"
   }
 }

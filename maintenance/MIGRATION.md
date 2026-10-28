@@ -96,3 +96,5 @@ About aliases `/about/`, `/about.html`, `/ar/about/`, `/ar/about.html` are retai
 Teaching, talk and project collection entries were generic University 1 / Testing Institute samples. They are archived, not author accomplishments. Old profile, CV and privacy boilerplate was replaced. Old publication resources not in the verified bibliography are preserved in the source archive; their URLs lead to the verified list. External links in the original articles are retained; historical technical prose has not been independently re-reviewed. The hydrogen image remains an external Bing image and depends on that host. Original media is preserved; unused theme fonts/JS/CSS are archived.
 
 The Talks & presentations index was restored at `/talks/` after user feedback. `_talks/` starts empty; the four historical sample entries remain archived. Use the VS Code New talk task to add actual talks.
+
+Later link review: the external Bing image in the green-hydrogen article returned HTTP 404 and was removed from the rendered article. Its original reference is preserved in Git history. The prose remains unchanged.

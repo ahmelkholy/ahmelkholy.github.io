@@ -137,7 +137,7 @@ async (page) => {
     "All articles readable without JavaScript",
   );
   check(
-    (await nojs.locator(".main-nav a").count()) === 8,
+    (await nojs.locator(".main-nav [data-nav-link]").count()) === 8,
     "Navigation works without JavaScript",
   );
   await ctx.close();

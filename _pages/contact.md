@@ -21,4 +21,4 @@ For engineering, research or a conversation about something you read here:
 - [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57202189065)
 - [SciProfiles](https://sciprofiles.com/profile/amelkholy)
 
-[Subscribe via RSS](/feed.xml) to follow new writing without an account.
+[Follow new posts](/follow/) to follow new writing without an account.

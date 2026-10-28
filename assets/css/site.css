@@ -792,3 +792,95 @@ mjx-container[display="true"] {
 .filter-field label {
   margin-bottom: 8px;
 }
+
+/* Top tabs become a reading rail without duplicating links or moving focus. */
+.nav-heading,
+.site-header .main-nav .back-top { display: none; }
+.nav-docked .site-header .main-nav {
+  position: fixed;
+  top: 24px;
+  inset-inline-start: max(40px, calc((100% - 1100px) / 2));
+  width: 225px;
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px;
+  background: var(--bg);
+  z-index: 10;
+}
+.nav-docked .nav-heading {
+  display: block;
+  padding: 7px 12px 12px;
+  color: var(--muted);
+  font-size: .73rem;
+}
+.nav-docked .site-header .main-nav a {
+  margin: 0;
+  padding: 10px 12px;
+  border: 0;
+  border-inline-start: 3px solid transparent;
+  border-radius: 3px;
+}
+.nav-docked .site-header .main-nav a[aria-current] {
+  border-inline-start-color: var(--accent);
+  font-weight: 650;
+}
+.nav-docked .site-header .main-nav .back-top {
+  display: block;
+  border-top: 1px solid var(--line);
+  margin-top: 10px;
+  font-size: .8rem;
+}
+.nav-docked .profile { visibility: hidden; }
+@media (min-width: 761px) and (max-width: 1050px) {
+  .nav-docked .site-header .main-nav { width: 190px; }
+}
+@media (min-width: 761px) and (max-width: 800px) {
+  .nav-docked .site-header .main-nav { inset-inline-start: 20px; }
+}
+@media (max-width: 760px) {
+  .nav-docked .site-header .main-nav {
+    top: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    max-height: none;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 0;
+    padding: 6px 10px;
+    box-shadow: 0 4px 12px #0005;
+    scrollbar-width: thin;
+  }
+  .nav-docked .site-header .main-nav a { flex: 0 0 auto; padding: 10px 12px; }
+  .nav-docked .site-header .main-nav .back-top,
+  .nav-docked .nav-heading { display: none; }
+  .nav-docked .profile { visibility: visible; }
+  .prose h2, .prose h3, #main { scroll-margin-top: 82px; }
+}
+.nav-section { display: none; }
+.nav-docked .nav-section {
+  display: block;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.nav-section > span { display: block; padding-inline: 12px; color: var(--muted); font-size: .7rem; }
+.nav-docked .site-header .main-nav .nav-section a {
+  display: block;
+  font-size: .78rem;
+  line-height: 1.5;
+  font-weight: 400;
+  background: transparent;
+  border: 0;
+  text-decoration: none;
+}
+@media (max-width: 760px) {
+  .nav-docked .nav-section { display: none; }
+}

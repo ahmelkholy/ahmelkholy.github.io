@@ -58,3 +58,39 @@ if (filters) {
   query.addEventListener("input", filter);
   filter();
 }
+
+// Keep the same links and keyboard focus when the navigation docks on scroll.
+const navSlot = document.querySelector('[data-nav-slot]');
+const mainNav = navSlot?.querySelector('.main-nav');
+if (mainNav) {
+  let scheduled = false;
+  const sectionBox = mainNav.querySelector('.nav-section');
+  const sectionLink = mainNav.querySelector('[data-current-section]');
+  const sections = [...document.querySelectorAll('main h2')];
+  sections.forEach((heading, i) => {
+    if (!heading.id) heading.id = 'reading-section-' + (i + 1);
+  });
+  function updateNavigation() {
+    scheduled = false;
+    const docked = navSlot.getBoundingClientRect().top <= 12;
+    document.body.classList.toggle('nav-docked', docked);
+    const current = sections.filter(heading => heading.getBoundingClientRect().top <= 150).at(-1);
+    sectionBox.hidden = !current;
+    if (current) {
+      sectionLink.textContent = current.textContent;
+      sectionLink.href = '#' + encodeURIComponent(current.id);
+      sectionLink.setAttribute('aria-current', 'location');
+    }
+  }
+  function measureNavigation() {
+    document.body.classList.remove('nav-docked');
+    navSlot.style.height = mainNav.offsetHeight + 'px';
+    updateNavigation();
+  }
+  window.addEventListener('scroll', () => {
+    if (!scheduled) { scheduled = true; requestAnimationFrame(updateNavigation); }
+  }, {passive: true});
+  window.addEventListener('resize', measureNavigation);
+  document.fonts.ready.then(measureNavigation);
+  measureNavigation();
+}

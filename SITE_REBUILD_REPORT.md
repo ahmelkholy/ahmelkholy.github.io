@@ -109,3 +109,13 @@ Live checks returned HTTP 200 for the home page, `/talks/`, `/ar/`, `/cv/`, `/si
 The workflow emitted non-blocking GitHub runner/Node migration notices; all jobs succeeded. Vendored MathJax contains upstream whitespace and the contact Markdown uses an intentional hard line break; a staged whitespace check reported these, rather than a build or runtime defect. The initial working-tree-only whitespace check did not include those then-untracked vendor files.
 
 Search Console verification and sitemap submission remain an owner-account step; no Google indexing or ranking outcome is claimed. This report update changes excluded maintenance documentation only and does not require another site deployment.
+
+## Scrolling navigation and link review
+
+The existing top navigation now docks as a vertical reading rail on desktop after scrolling past the header. It retains the same focusable links, highlights the current page, shows the current content section, and offers Back to top. It mirrors naturally for Arabic RTL. On screens up to 760px it becomes a compact horizontally scrollable sticky bar. With JavaScript disabled the normal navigation remains available.
+
+Added `/follow/` as a human-readable subscription page and changed the footer/contact links to point there. `/feed.xml` remains the standard Atom/RSS-compatible subscription feed, verified to return HTTP 200 with eight entries. Raw XML is expected for feed readers; it is not an empty page.
+
+Validation: all 70 HTML pages pass internal-link/fragment/asset checks; 45 standard pages pass search-metadata checks. Chromium tested dock/undock at 1440, 800, 390 and 320px, Arabic RTL placement, active page, section tracking, clicking a docked link, Back to top and no-JavaScript navigation. No horizontal document overflow was detected. Screenshots are in `review-artifacts/navigation-desktop.png` and `navigation-mobile.png`.
+
+External audit: 43 distinct links remain; 37 were reachable. Two DOI publisher links, LinkedIn, ResearchGate and SciProfiles restrict automated requests, while Scopus returned an unresolved redirect. Those six are unconfirmed by this automated audit, not represented as verified working. The old Bing-hosted green-hydrogen illustration returned a definite HTTP 404 and its broken reference was removed; the article prose and historical source remain. The read-only audit can be repeated with `python3 scripts/check_external_links.py`.

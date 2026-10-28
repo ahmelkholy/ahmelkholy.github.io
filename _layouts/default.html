@@ -20,16 +20,21 @@
 {% if page.math %}<script defer src="{{ '/assets/js/mathjax/tex-mml-chtml.js' | relative_url }}"></script>{% endif %}
 {% if page.translation_key %}{% assign candidates = site.pages | concat: site.posts | concat: site.talks %}{% for other in candidates %}{% if other.translation_key == page.translation_key %}<link rel="alternate" hreflang="{{ other.lang }}" href="{{ other.url | absolute_url }}">{% endif %}{% endfor %}{% endif %}
 </head>
-<body>
+<body id="top">
 <a class="skip" href="#main">{{ ui.skip }}</a>
 <header class="site-header shell">
 <div class="header-top"><a class="wordmark" href="{{ '/' | relative_url }}" lang="en" dir="ltr">Ahmed M. Elkholy<span>ENGINEERING · SOFTWARE · IDEAS</span></a>
 <nav class="header-languages" aria-label="Profile languages"><a href="{{ '/cv/' | relative_url }}" lang="en">EN</a><a href="{{ '/ar/' | relative_url }}" lang="ar">العربية</a><a href="{{ '/ru/' | relative_url }}" lang="ru">RU</a></nav></div>
-<nav class="main-nav" aria-label="{{ ui.home }}">
+<div class="nav-slot" data-nav-slot>
+<nav class="main-nav" aria-label="{{ ui.navigation }}">
+<span class="nav-heading" aria-hidden="true">{{ ui.navigation }}</span>
 {% assign routes = '/,/articles/,/projects/,/docs/,/publications/,/talks/,/cv/,/contact/' | split: ',' %}
 {% assign keys = 'home,articles,projects,docs,publications,talks,cv,contact' | split: ',' %}
-{% for route in routes %}{% assign key = keys[forloop.index0] %}{% assign target = route %}{% if lang != 'en' and key == 'articles' %}{% assign target = '/' | append: lang | append: '/articles/' %}{% elsif lang != 'en' and key == 'cv' %}{% assign target = '/' | append: lang | append: '/' %}{% endif %}<a href="{{ target | relative_url }}"{% if page.url == target %} aria-current="page"{% elsif route != '/' and page.url contains route %} aria-current="page"{% elsif route == '/articles/' and page.layout == 'post' %} aria-current="page"{% endif %}>{{ ui[key] }}</a>{% endfor %}
+{% for route in routes %}{% assign key = keys[forloop.index0] %}{% assign target = route %}{% if lang != 'en' and key == 'articles' %}{% assign target = '/' | append: lang | append: '/articles/' %}{% elsif lang != 'en' and key == 'cv' %}{% assign target = '/' | append: lang | append: '/' %}{% endif %}<a data-nav-link href="{{ target | relative_url }}"{% if page.url == target %} aria-current="page"{% elsif route != '/' and page.url contains route %} aria-current="page"{% elsif route == '/articles/' and page.layout == 'post' %} aria-current="page"{% elsif key == 'publications' and page.collection == 'publications' %} aria-current="page"{% endif %}>{{ ui[key] }}</a>{% endfor %}
+<div class="nav-section" hidden><span>{{ ui.contents }}</span><a data-current-section href="#main">{{ page.title | escape }}</a></div>
+<a class="back-top" href="#top">↑ {{ ui.back_top }}</a>
 </nav>
+</div>
 </header>
 <div class="site-grid shell">
 <aside class="profile" aria-label="{% if lang == 'ar' %}نبذة عن المؤلف{% else %}Author profile{% endif %}">
@@ -42,6 +47,6 @@
 </aside>
 <main id="main" tabindex="-1">{{ content }}</main>
 </div>
-<footer class="site-footer shell"><p>{{ ui.footer }}</p><div><a href="{{ '/feed.xml' | relative_url }}">RSS</a><a href="https://github.com/ahmelkholy">GitHub</a><a href="https://www.youtube.com/@ahmelkholy">YouTube</a><a href="{{ '/terms/' | relative_url }}">Privacy</a></div><p class="small">© {{ site.time | date: '%Y' }} Ahmed M. Elkholy · Built with Jekyll</p></footer>
+<footer class="site-footer shell"><p>{{ ui.footer }}</p><div><a href="{{ '/follow/' | relative_url }}">{{ ui.follow }}</a><a href="https://github.com/ahmelkholy">GitHub</a><a href="https://www.youtube.com/@ahmelkholy">YouTube</a><a href="{{ '/terms/' | relative_url }}">Privacy</a></div><p class="small">© {{ site.time | date: '%Y' }} Ahmed M. Elkholy · Built with Jekyll</p></footer>
 </body>
 </html>
