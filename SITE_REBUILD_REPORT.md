@@ -143,4 +143,6 @@ Limits: the four marked English sections synchronize, not all prose. Articles, t
 
 ## Publishing authorization — 28 October 2026
 
-The user subsequently requested committing and pushing all three repositories. Before pushing, all three remotes were fetched and confirmed current with their master branches. Shared-field consistency and all eight isolated synchronization tests passed again. GitHub reported the CV repository as public, contrary to the intended private separation; its push is held pending the user's visibility decision. Website and GitHub-profile changes are authorized for public deployment. This entry supersedes the integration's earlier local-only delivery status.
+The user subsequently requested committing and pushing all three repositories. Before pushing, all three remotes were fetched and confirmed current with their master branches. Shared-field consistency and all eight isolated synchronization tests passed again. GitHub initially reported the CV repository as public. The user explicitly authorized making it private; its PRIVATE visibility was verified before pushing the CV commit. Website and GitHub-profile changes are authorized for public deployment. This entry supersedes the integration's earlier local-only delivery status.
+
+All three implementation commits were pushed successfully: website `7cbe7e0`, GitHub profile `ea9428a`, and private CV `9bca710`. The website build and generated-site validation passed in GitHub Actions run `40759050313`. Private sync state and evidence remain excluded; no histories were rewritten.
