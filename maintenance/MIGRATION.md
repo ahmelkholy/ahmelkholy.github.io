@@ -98,3 +98,9 @@ Teaching, talk and project collection entries were generic University 1 / Testin
 The Talks & presentations index was restored at `/talks/` after user feedback. `_talks/` starts empty; the four historical sample entries remain archived. Use the VS Code New talk task to add actual talks.
 
 Later link review: the external Bing image in the green-hydrogen article returned HTTP 404 and was removed from the rendered article. Its original reference is preserved in Git history. The prose remains unchanged.
+
+## Restored conference entries from the old CV
+
+The original `_pages/cv.md` had a Talks section with MEPCON 2017, 2018 and 2019. These genuine entries were missed when the initial rebuild archived the separate `_talks/` sample collection. Following the author's correction, all three are restored under `_talks/`, linked from `/talks/` and `/cv/`. They are conference entries; no talk title, speaking role or slide deck has been invented.
+
+The old text incorrectly assigned 2016 dates to all three. Conference dates were corrected to 19–21 December 2017, 18–20 December 2018, and 17–19 December 2019 using the [MEPCON organizing-university conference history](https://kfs.edu.eg/engineering/pdf/9122022155838.pdf) and [Tanta University conference archive](https://tanta.edu.eg/conferences-old.aspx). All were held in Cairo. Related 2017/2018 paper links use the verified bibliography.

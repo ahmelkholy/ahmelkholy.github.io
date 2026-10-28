@@ -119,3 +119,8 @@ Added `/follow/` as a human-readable subscription page and changed the footer/co
 Validation: all 70 HTML pages pass internal-link/fragment/asset checks; 45 standard pages pass search-metadata checks. Chromium tested dock/undock at 1440, 800, 390 and 320px, Arabic RTL placement, active page, section tracking, clicking a docked link, Back to top and no-JavaScript navigation. No horizontal document overflow was detected. Screenshots are in `review-artifacts/navigation-desktop.png` and `navigation-mobile.png`.
 
 External audit: 43 distinct links remain; 37 were reachable. Two DOI publisher links, LinkedIn, ResearchGate and SciProfiles restrict automated requests, while Scopus returned an unresolved redirect. Those six are unconfirmed by this automated audit, not represented as verified working. The old Bing-hosted green-hydrogen illustration returned a definite HTTP 404 and its broken reference was removed; the article prose and historical source remain. The read-only audit can be repeated with `python3 scripts/check_external_links.py`.
+
+
+## Correction: recovered talks and conference entries
+
+After the author pointed out missing conference history, the archived old CV was re-read in full. Its Talks section lists MEPCON 2017, 2018 and 2019; these were missed when reviewing the separate sample-only `_talks/` directory. All three have now been restored as Markdown conference entries and linked from Talks and the online CV. The earlier empty-state wording is superseded. The incorrectly repeated 2016 dates were corrected against official organizing-university records; see `maintenance/MIGRATION.md` for sources. No unsupported presentation title or speaking role is asserted.

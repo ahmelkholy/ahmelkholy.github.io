@@ -76,6 +76,12 @@ Renewable-energy project: *The Impact of Large Wind Energy Penetration on the Pe
 
 Tutorials, laboratory teaching, assessment and student project supervision. Previously **Demonstrator**, March 2016–July 2019.
 
+## Talks and Conferences
+
+- [MEPCON 2019 — 21st International Middle East Power Systems Conference](/talks/2019-12-17-mepcon-2019/), Cairo, Egypt, 17–19 December 2019.
+- [MEPCON 2018 — 20th International Middle East Power Systems Conference](/talks/2018-12-18-mepcon-2018/), Cairo, Egypt, 18–20 December 2018.
+- [MEPCON 2017 — 19th International Middle East Power Systems Conference](/talks/2017-12-19-mepcon-2017/), Cairo, Egypt, 19–21 December 2017.
+
 ## Selected Publications
 
 Full publication list: [Google Scholar](https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en).
