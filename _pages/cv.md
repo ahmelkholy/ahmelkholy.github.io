@@ -15,7 +15,9 @@ redirect_from: [/about/, /about.html]
 [LinkedIn](https://www.linkedin.com/in/ahmelkholy/) | [GitHub](https://github.com/ahmelkholy) | [ORCID](https://orcid.org/0000-0002-1834-1175) | [Google Scholar](https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en)
 
 ## Profile
+<!-- shared:bio -->
 Electrical power engineer with experience in transformer commissioning tests, equipment modelling, reactive-power compensation and ETAP studies for industrial and PV projects. Researcher at MPEI and Assistant Lecturer at Tanta University, pursuing a PhD with completion expected in December 2026. Also contributes to utility equipment specifications and develops power-system analysis software in Julia and Python.
+<!-- /shared:bio -->
 
 ## Engineering Experience
 
@@ -53,13 +55,16 @@ Electrical power engineer with experience in transformer commissioning tests, eq
 
 ## Technical Skills
 
+<!-- shared:skills -->
 - **Power-system studies:** ETAP, NEPLAN, DIgSILENT PowerFactory and PSCAD; load flow, short circuit, arc flash, protection settings, capacitor compensation, PV and battery-source scenarios; small-signal and transient stability, harmonic analysis.
 - **Modelling and analysis:** MATLAB/Simulink, Simscape Electrical, parameter fitting from measurements, genetic algorithms, unbalanced distribution networks.
 - **Power electronics:** thyristor-based compensation, shunt regulators, arc-suppression devices and power quality.
 - **Programming and documentation:** Python, Julia, R, SQL, Git/GitHub and LaTeX; engineering reports, specifications and inspection/test plans.
+<!-- /shared:skills -->
 
 ## Education and Academic Appointments
 
+<!-- shared:education -->
 **PhD studies in Electrical Engineering — MPEI, Russia** | In progress; expected December 2026
 
 Research: managing operating conditions in distribution networks with unbalanced loads using shunt regulation devices. Supervisor: Prof. Dmitry I. Panfilov.
@@ -75,6 +80,7 @@ Renewable-energy project: *The Impact of Large Wind Energy Penetration on the Pe
 **Assistant Lecturer — Tanta University** | July 2019–present
 
 Tutorials, laboratory teaching, assessment and student project supervision. Previously **Demonstrator**, March 2016–July 2019.
+<!-- /shared:education -->
 
 ## Talks and Conferences
 
@@ -100,4 +106,6 @@ Full publication list: [Google Scholar](https://scholar.google.com/citations?use
 Programming for Data Science for Enterprise Nanodegree, Udacity (2019); Faculty and Leadership Development Centre, Tanta University (2019); Egyptian Engineers Syndicate member since 2014.
 
 
+<!-- shared:links -->
 [Website](https://ahmelkholy.github.io/) | [LinkedIn](https://www.linkedin.com/in/ahmelkholy/) | [Google Scholar](https://scholar.google.com/citations?user=KbZs8_AAAAAJ&hl=en) | [GitHub](https://github.com/ahmelkholy) | [YouTube](https://www.youtube.com/@ahmelkholy)
+<!-- /shared:links -->

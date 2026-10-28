@@ -63,7 +63,7 @@ for path, page in pages.items():
 for name in ('feed.xml', 'sitemap.xml'):
     try: ET.parse(root / name)
     except (OSError, ET.ParseError) as error: errors.append(f'{name}: {error}')
-for forbidden in ('AUTHOR_GUIDE.md','MIGRATION.md','SITE_REBUILD_REPORT.md','scripts','tests','static-docs','maintenance','.archive','.tools','Gemfile','node_modules'):
+for forbidden in ('shared-profile.json','profile-sync','.profile-sync','Ahmed.code-workspace','AUTHOR_GUIDE.md','MIGRATION.md','SITE_REBUILD_REPORT.md','scripts','tests','static-docs','maintenance','.archive','.tools','Gemfile','node_modules'):
     if (root / forbidden).exists(): errors.append(f'Maintenance path published: {forbidden}')
 for path in Path('static-docs').rglob('*'):
     if path.is_file():

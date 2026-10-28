@@ -65,3 +65,7 @@ The phone number has been removed from the public CV page and PDF. Keep replacem
 [Rebuild report](SITE_REBUILD_REPORT.md) · [Migration map](maintenance/MIGRATION.md)
 
 Original site sources are preserved in `.archive/original-site.tar.gz` and Git history, with the original LICENSE intact. These and maintenance files are not published.
+
+## Shared profile
+
+Use the local combined VS Code workspace to edit common biography, skills, education and links across the website, GitHub profile and private CV. See [shared profile editing](maintenance/SHARED_PROFILE.md). Ordinary articles still need only Markdown and a push.
