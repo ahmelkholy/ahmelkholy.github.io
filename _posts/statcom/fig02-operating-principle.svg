@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="676.8pt" viewBox="0 0 1152 676.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>Reactive-power exchange for E above, equal to, and below V; injection-positive sign convention.</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Reactive-power exchange for E above, equal to, and below V; injection-positive sign convention.</dc:title>
+    <dc:date>2026-10-31T05:31:44.527796</dc:date>
+    <dc:description>Original analytical illustration. Sources: https://opal-rt.atlassian.net/wiki/spaces/PSPS/pages/1551733147/Static+Synchronous+Compensator+Phasor+Type</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 676.8 
+L 1152 676.8 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 51.48 533.88 
+L 369.72 533.88 
+Q 375.48 533.88 375.48 528.12 
+L 375.48 152.28 
+Q 375.48 146.52 369.72 146.52 
+L 51.48 146.52 
+Q 45.72 146.52 45.72 152.28 
+L 45.72 528.12 
+Q 45.72 533.88 51.48 533.88 
+z
+" clip-path="url(#p308753897e)" style="fill: #ffffff; stroke: #e7edf2; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 108 334.08 
+C 114.492172 334.08 120.719315 331.500633 125.309974 326.909974 
+C 129.900633 322.319315 132.48 316.092172 132.48 309.6 
+C 132.48 303.107828 129.900633 296.880685 125.309974 292.290026 
+C 120.719315 287.699367 114.492172 285.12 108 285.12 
+C 101.507828 285.12 95.280685 287.699367 90.690026 292.290026 
+C 86.099367 296.880685 83.52 303.107828 83.52 309.6 
+C 83.52 316.092172 86.099367 322.319315 90.690026 326.909974 
+C 95.280685 331.500633 101.507828 334.08 108 334.08 
+z
+" clip-path="url(#p308753897e)" style="fill: #eaf5f4; stroke: #087f8c; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 165.24 323.64 
+L 216.36 323.64 
+Q 217.08 323.64 217.08 322.92 
+L 217.08 296.28 
+Q 217.08 295.56 216.36 295.56 
+L 165.24 295.56 
+Q 164.52 295.56 164.52 296.28 
+L 164.52 322.92 
+Q 164.52 323.64 165.24 323.64 
+z
+" clip-path="url(#p308753897e)" style="fill: #ffffff; stroke: #18334c; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 149.598413 410.4 
+Q 208.797942 410.4 264.866976 410.4 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #087f8c; stroke-width: 2.8; stroke-linecap: round"/>
+    <path d="M 258.066976 407 
+L 264.866976 410.4 
+L 258.066976 413.8 
+z
+" clip-path="url(#p308753897e)" style="fill: #087f8c; stroke: #087f8c; stroke-width: 2.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 416.52 533.88 
+L 734.76 533.88 
+Q 740.52 533.88 740.52 528.12 
+L 740.52 152.28 
+Q 740.52 146.52 734.76 146.52 
+L 416.52 146.52 
+Q 410.76 146.52 410.76 152.28 
+L 410.76 528.12 
+Q 410.76 533.88 416.52 533.88 
+z
+" clip-path="url(#p308753897e)" style="fill: #ffffff; stroke: #e7edf2; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 473.04 334.08 
+C 479.532172 334.08 485.759315 331.500633 490.349974 326.909974 
+C 494.940633 322.319315 497.52 316.092172 497.52 309.6 
+C 497.52 303.107828 494.940633 296.880685 490.349974 292.290026 
+C 485.759315 287.699367 479.532172 285.12 473.04 285.12 
+C 466.547828 285.12 460.320685 287.699367 455.730026 292.290026 
+C 451.139367 296.880685 448.56 303.107828 448.56 309.6 
+C 448.56 316.092172 451.139367 322.319315 455.730026 326.909974 
+C 460.320685 331.500633 466.547828 334.08 473.04 334.08 
+z
+" clip-path="url(#p308753897e)" style="fill: #e7edf2; stroke: #506477; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 530.28 323.64 
+L 581.4 323.64 
+Q 582.12 323.64 582.12 322.92 
+L 582.12 296.28 
+Q 582.12 295.56 581.4 295.56 
+L 530.28 295.56 
+Q 529.56 295.56 529.56 296.28 
+L 529.56 322.92 
+Q 529.56 323.64 530.28 323.64 
+z
+" clip-path="url(#p308753897e)" style="fill: #ffffff; stroke: #18334c; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 781.56 533.88 
+L 1099.8 533.88 
+Q 1105.56 533.88 1105.56 528.12 
+L 1105.56 152.28 
+Q 1105.56 146.52 1099.8 146.52 
+L 781.56 146.52 
+Q 775.8 146.52 775.8 152.28 
+L 775.8 528.12 
+Q 775.8 533.88 781.56 533.88 
+z
+" clip-path="url(#p308753897e)" style="fill: #ffffff; stroke: #e7edf2; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 838.08 334.08 
+C 844.572172 334.08 850.799315 331.500633 855.389974 326.909974 
+C 859.980633 322.319315 862.56 316.092172 862.56 309.6 
+C 862.56 303.107828 859.980633 296.880685 855.389974 292.290026 
+C 850.799315 287.699367 844.572172 285.12 838.08 285.12 
+C 831.587828 285.12 825.360685 287.699367 820.770026 292.290026 
+C 816.179367 296.880685 813.6 303.107828 813.6 309.6 
+C 813.6 316.092172 816.179367 322.319315 820.770026 326.909974 
+C 825.360685 331.500633 831.587828 334.08 838.08 334.08 
+z
+" clip-path="url(#p308753897e)" style="fill: #fff4e6; stroke: #bc6b15; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 895.32 323.64 
+L 946.44 323.64 
+Q 947.16 323.64 947.16 322.92 
+L 947.16 296.28 
+Q 947.16 295.56 946.44 295.56 
+L 895.32 295.56 
+Q 894.6 295.56 894.6 296.28 
+L 894.6 322.92 
+Q 894.6 323.64 895.32 323.64 
+z
+" clip-path="url(#p308753897e)" style="fill: #ffffff; stroke: #18334c; stroke-width: 1.7; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 998.081587 410.4 
+Q 938.882058 410.4 882.813024 410.4 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #bc6b15; stroke-width: 2.8; stroke-linecap: round"/>
+    <path d="M 889.613024 413.8 
+L 882.813024 410.4 
+L 889.613024 407 
+z
+" clip-path="url(#p308753897e)" style="fill: #bc6b15; stroke: #bc6b15; stroke-width: 2.8; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 43.2 104.4 
+L 1108.8 104.4 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #e7edf2; stroke-width: 1.4; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 132.48 309.6 
+L 165.6 309.6 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 216 309.6 
+L 309.6 309.6 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 309.6 342 
+L 309.6 277.2 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 497.52 309.6 
+L 530.64 309.6 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 581.04 309.6 
+L 674.64 309.6 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 674.64 342 
+L 674.64 277.2 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 519.84 410.4 
+L 627.84 410.4 
+" clip-path="url(#p308753897e)" style="fill: none; stroke-dasharray: 2,3.3; stroke-dashoffset: 0; stroke: #506477; stroke-width: 2"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 862.56 309.6 
+L 895.68 309.6 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 946.08 309.6 
+L 1039.68 309.6 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 1039.68 342 
+L 1039.68 277.2 
+" clip-path="url(#p308753897e)" style="fill: none; stroke: #18334c; stroke-width: 3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 23px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #18334c" x="43.2" y="47.837031" transform="rotate(-0 43.2 47.837031)">02  |  How the converter exchanges reactive power</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #506477" x="43.2" y="81.485156" transform="rotate(-0 43.2 81.485156)">Balanced, lossless fundamental-frequency model; converter voltage E and bus voltage V are in phase.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="210.6" y="183.587187" transform="rotate(-0 210.6 183.587187)">CAPACITIVE</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="210.6" y="231.814375" transform="rotate(-0 210.6 231.814375)">E &gt; V</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="108" y="315.394688" transform="rotate(-0 108 315.394688)">~</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="108" y="360.815" transform="rotate(-0 108 360.815)">E</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18334c" x="190.8" y="312.91125" transform="rotate(-0 190.8 312.91125)">X</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18334c" x="309.6" y="374.387188" transform="rotate(-0 309.6 374.387188)">V (PCC)</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="210.6" y="455.112422" transform="rotate(-0 210.6 455.112422)">Inject reactive power</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #087f8c" x="210.6" y="494.015" transform="rotate(-0 210.6 494.015)">Qinj &gt; 0</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #506477" x="575.64" y="183.587187" transform="rotate(-0 575.64 183.587187)">ZERO VAR</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #506477" x="575.64" y="231.814375" transform="rotate(-0 575.64 231.814375)">E = V</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #506477" x="473.04" y="315.394688" transform="rotate(-0 473.04 315.394688)">~</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #506477" x="473.04" y="360.815" transform="rotate(-0 473.04 360.815)">E</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18334c" x="555.84" y="312.91125" transform="rotate(-0 555.84 312.91125)">X</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18334c" x="674.64" y="374.387188" transform="rotate(-0 674.64 374.387188)">V (PCC)</text>
+   </g>
+   <g id="text_17">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #506477" x="575.64" y="455.112422" transform="rotate(-0 575.64 455.112422)">No reactive exchange</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #506477" x="575.64" y="494.015" transform="rotate(-0 575.64 494.015)">Qinj = 0</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bc6b15" x="940.68" y="183.587187" transform="rotate(-0 940.68 183.587187)">INDUCTIVE</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bc6b15" x="940.68" y="231.814375" transform="rotate(-0 940.68 231.814375)">E &lt; V</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 21px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bc6b15" x="838.08" y="315.394688" transform="rotate(-0 838.08 315.394688)">~</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bc6b15" x="838.08" y="360.815" transform="rotate(-0 838.08 360.815)">E</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18334c" x="920.88" y="312.91125" transform="rotate(-0 920.88 312.91125)">X</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18334c" x="1039.68" y="374.387188" transform="rotate(-0 1039.68 374.387188)">V (PCC)</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bc6b15" x="940.68" y="455.165156" transform="rotate(-0 940.68 455.165156)">Absorb reactive power</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #bc6b15" x="940.68" y="494.015" transform="rotate(-0 940.68 494.015)">Qinj &lt; 0</text>
+   </g>
+   <g id="text_27">
+    <!-- $Q_{\mathrm{inj}} = 3V(E-V)/X$ -->
+    <g style="fill: #18334c" transform="translate(478.135 585.495)">
+     <text>
+      <tspan x="0" y="-0.546875" style="font-style: oblique; font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">Q</tspan>
+      <tspan x="80.374316" y="-0.546875" style="font-style: oblique; font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">V</tspan>
+      <tspan x="105.081348" y="-0.546875" style="font-style: oblique; font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">E</tspan>
+      <tspan x="147.846973" y="-0.546875" style="font-style: oblique; font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">V</tspan>
+      <tspan x="179.928027" y="-0.546875" style="font-style: oblique; font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">X</tspan>
+      <tspan x="18.103516" y="3.226562" style="font-size: 16.1px; font-family: 'DejaVu Sans'; fill: #18334c">i</tspan>
+      <tspan x="22.576611" y="3.226562" style="font-size: 16.1px; font-family: 'DejaVu Sans'; fill: #18334c">n</tspan>
+      <tspan x="32.780615" y="3.226562" style="font-size: 16.1px; font-family: 'DejaVu Sans'; fill: #18334c">j</tspan>
+      <tspan x="42.363574" y="-0.546875" style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">=</tspan>
+      <tspan x="66.116016" y="-0.546875" style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">3</tspan>
+      <tspan x="96.108203" y="-0.546875" style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">(</tspan>
+      <tspan x="124.094531" y="-0.546875" style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">−</tspan>
+      <tspan x="163.580859" y="-0.546875" style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">)</tspan>
+      <tspan x="172.554004" y="-0.546875" style="font-size: 23px; font-family: 'DejaVu Sans'; fill: #18334c">/</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #506477" x="576" y="619.769219" transform="rotate(-0 576 619.769219)">V and E are RMS phase-to-neutral magnitudes. Positive Qinj means injection into the AC bus.</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #506477" x="43.2" y="658.097344" transform="rotate(-0 43.2 658.097344)">Original illustration. X is per-phase coupling reactance; practical operation also draws active power to cover losses.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p308753897e">
+   <rect x="0" y="0" width="1152" height="676.8"/>
+  </clipPath>
+ </defs>
+</svg>
