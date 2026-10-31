@@ -10,6 +10,7 @@ case "${1:-preview}" in
     JEKYLL_ENV=production bundle exec jekyll build
     python3 scripts/check_site.py
     python3 tests/search_metadata.py
+    bundle exec ruby tests/post_assets.rb
     ;;
   *) echo 'Usage: bash scripts/site [preview|check]' >&2; exit 2 ;;
 esac

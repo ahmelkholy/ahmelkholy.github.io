@@ -1,0 +1,269 @@
+{
+  "verified_on": "2026-10-31",
+  "note": "Original published paper artwork, cropped and converted to SVG. No diagram redrawing or synthetic response curves. See the article captions for interpretation and source credit.",
+  "figures": [
+    {
+      "article_figure": 1,
+      "site_file": "_posts/statcom/figs/fig01-tu-2019-fig01-statcom-bes.svg",
+      "source_authors": [
+        "Ganggang Tu",
+        "Yanjun Li",
+        "Ji Xiang"
+      ],
+      "source_title": "Analysis, Control and Optimal Placement of Static Synchronous Compensator with/without Battery Energy Storage",
+      "source_year": 2019,
+      "source_journal": "Energies 12(24), 4715",
+      "source_doi": "https://doi.org/10.3390/en12244715",
+      "source_pdf": "https://www.mdpi.com/1996-1073/12/24/4715/pdf",
+      "source_figure": 1,
+      "source_pdf_page": 4,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Final page explicitly states Copyright 2019 by the authors and CC BY 4.0. Figure 1 caption has no separate third-party credit or exclusion. Nearby citations support the model description but do not label the figure as a third-party reproduction.",
+      "extraction_method": "Exact vector extraction using PyMuPDF; original paths and glyph outlines retained. No redrawing or synthetic data.",
+      "crop_box_pdf_points": [
+        205,
+        451,
+        387,
+        610
+      ],
+      "svg_sha256": "43f0fc9d3e9ae24c073945db4954c851c5060532c88a538b11dade710a1dd213"
+    },
+    {
+      "article_figure": 2,
+      "site_file": "_posts/statcom/figs/fig02-xu2020-fig4-inductive-phasors.svg",
+      "source_authors": [
+        "Chen Xu",
+        "Jingjing Chen",
+        "Ke Dai"
+      ],
+      "source_title": "Carrier-Phase-Shifted Rotation Pulse-Width-Modulation Scheme for Dynamic Active Power Balance of Modules in Cascaded H-Bridge STATCOMs",
+      "source_year": 2020,
+      "source_journal": "Energies 13(5), 1052",
+      "source_doi": "https://doi.org/10.3390/en13051052",
+      "source_pdf": "https://www.mdpi.com/1996-1073/13/5/1052/pdf",
+      "source_figure": 4,
+      "source_pdf_page": 6,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "The publisher HTML footer and indicated PDF page explicitly state that the article is distributed under Creative Commons Attribution (CC BY) 4.0. PDF page 16.",
+      "figure_credit_check": "Selected figure captions and adjacent discussion were inspected; no reproduced/adapted credit or separate rights restriction is stated for the selected figures. This is a report of the visible publisher attribution, not a guarantee about undisclosed rights.",
+      "extraction_method": "Original publisher HTML/PDF and figure assets downloaded. Metadata, CC BY 4.0 notices, captions and adjacent discussion inspected. SVGs extracted directly from PDF figure rectangles with Poppler; no redraw or AI generation. Final SVGs rendered with Inkscape and visually checked against original PDF/PNG. A white background and accessible title/description were added; no scientific content was changed.",
+      "crop_box_pdf_points": [
+        130,
+        298,
+        467,
+        511
+      ],
+      "format_detail": "pure vector",
+      "source_pdf_sha256": "abc8ab413ca7fa9abea2d81c03ee9c373f424619fe26fa776698c5bc0012d00f",
+      "svg_sha256": "33ade2a6b7076f545d70029350695f1a6c7c6ac2c5bda68795a2a2cf742c1fc0"
+    },
+    {
+      "article_figure": 3,
+      "site_file": "_posts/statcom/figs/fig03-xu2020-fig1-chb-statcom-control.svg",
+      "source_authors": [
+        "Chen Xu",
+        "Jingjing Chen",
+        "Ke Dai"
+      ],
+      "source_title": "Carrier-Phase-Shifted Rotation Pulse-Width-Modulation Scheme for Dynamic Active Power Balance of Modules in Cascaded H-Bridge STATCOMs",
+      "source_year": 2020,
+      "source_journal": "Energies 13(5), 1052",
+      "source_doi": "https://doi.org/10.3390/en13051052",
+      "source_pdf": "https://www.mdpi.com/1996-1073/13/5/1052/pdf",
+      "source_figure": 1,
+      "source_pdf_page": 3,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "The publisher HTML footer and indicated PDF page explicitly state that the article is distributed under Creative Commons Attribution (CC BY) 4.0. PDF page 16.",
+      "figure_credit_check": "Selected figure captions and adjacent discussion were inspected; no reproduced/adapted credit or separate rights restriction is stated for the selected figures. This is a report of the visible publisher attribution, not a guarantee about undisclosed rights.",
+      "extraction_method": "Original publisher HTML/PDF and figure assets downloaded. Metadata, CC BY 4.0 notices, captions and adjacent discussion inspected. SVGs extracted directly from PDF figure rectangles with Poppler; no redraw or AI generation. Final SVGs rendered with Inkscape and visually checked against original PDF/PNG. A white background and accessible title/description were added; no scientific content was changed.",
+      "crop_box_pdf_points": [
+        91,
+        357,
+        513,
+        595
+      ],
+      "format_detail": "vector linework and text with original embedded raster shadow effects",
+      "source_pdf_sha256": "abc8ab413ca7fa9abea2d81c03ee9c373f424619fe26fa776698c5bc0012d00f",
+      "svg_sha256": "0b1cd0e83f2f50c4a61c87229760fa5cc99a6f3292cf12e5277690b190768e25"
+    },
+    {
+      "article_figure": 4,
+      "site_file": "_posts/statcom/figs/fig04-tariq2022-fig10-fault-response.svg",
+      "source_authors": [
+        "Hanan Tariq",
+        "Stanislaw Czapp",
+        "Sarmad Tariq",
+        "Khalid Mehmood Cheema",
+        "Aqarib Hussain",
+        "Ahmad H. Milyani",
+        "Sultan Alghamdi",
+        "Z. M. Salem Elbarbary"
+      ],
+      "source_title": "Comparative Analysis of Reactive Power Compensation Devices in a Real Electric Substation",
+      "source_year": 2022,
+      "source_journal": "Energies 15(12), 4453",
+      "source_doi": "https://doi.org/10.3390/en15124453",
+      "source_pdf": "https://www.mdpi.com/1996-1073/15/12/4453/pdf",
+      "source_figure": 10,
+      "source_pdf_page": 12,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "The publisher HTML footer and indicated PDF page explicitly state that the article is distributed under Creative Commons Attribution (CC BY) 4.0. PDF page 1.",
+      "figure_credit_check": "Selected figure captions and adjacent discussion were inspected; no reproduced/adapted credit or separate rights restriction is stated for the selected figures. This is a report of the visible publisher attribution, not a guarantee about undisclosed rights.",
+      "extraction_method": "Original publisher HTML/PDF and figure assets downloaded. Metadata, CC BY 4.0 notices, captions and adjacent discussion inspected. SVGs extracted directly from PDF figure rectangles with Poppler; no redraw or AI generation. Final SVGs rendered with Inkscape and visually checked against original PDF/PNG. A white background and accessible title/description were added; no scientific content was changed.",
+      "crop_box_pdf_points": [
+        89,
+        408,
+        519,
+        755
+      ],
+      "format_detail": "pure vector",
+      "source_pdf_sha256": "923bd94e018a814346f6bca6f1230be29963eb41b0cec2b06092145a400e8235",
+      "svg_sha256": "3077064195f911e62e9010b243570bf747e9b64a69e6d5ed4a572010db05666b"
+    },
+    {
+      "article_figure": 5,
+      "site_file": "_posts/statcom/figs/fig05-rahman-2025-fig11-q-v-droop.svg",
+      "source_authors": [
+        "Obaidur Rahman",
+        "Duane Robinson",
+        "Sean Elphick"
+      ],
+      "source_title": "Mitigation of Solar PV Impact in Four-Wire LV Radial Distribution Feeders Through Reactive Power Management Using STATCOMs",
+      "source_year": 2025,
+      "source_journal": "Electronics 14(15), 3063",
+      "source_doi": "https://doi.org/10.3390/electronics14153063",
+      "source_pdf": "https://www.mdpi.com/2079-9292/14/15/3063/pdf",
+      "source_figure": 11,
+      "source_pdf_page": 12,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "First PDF page explicitly states CC BY 4.0. Figure 11 is the droop curve defined for this paper's case study; no separate third-party credit or reuse exclusion appears.",
+      "extraction_method": "Exact vector extraction using PyMuPDF; original paths and glyph outlines retained. No redrawing or synthetic data.",
+      "crop_box_pdf_points": [
+        165,
+        187,
+        481,
+        391
+      ],
+      "svg_sha256": "1256bba5fa88fca52f2c527860abc6b9d0a86489a2fe5040d2e7a32967bda019"
+    },
+    {
+      "article_figure": 6,
+      "site_file": "_posts/statcom/figs/fig06-rivera-2021-fig03-data-driven-control.svg",
+      "source_authors": [
+        "David Rivera",
+        "Daniel Guillen",
+        "Jonathan C. Mayo-Maldonado",
+        "Jesus E. Valdez-Resendiz",
+        "Gerardo Escobar"
+      ],
+      "source_title": "Power Grid Dynamic Performance Enhancement via STATCOM Data-Driven Control",
+      "source_year": 2021,
+      "source_journal": "Mathematics 9(19), 2361",
+      "source_doi": "https://doi.org/10.3390/math9192361",
+      "source_pdf": "https://eprints.whiterose.ac.uk/id/eprint/184812/1/mathematics-09-02361-v2.pdf",
+      "source_figure": 3,
+      "source_pdf_page": 12,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "PDF page 2 (printed page 1) explicitly states CC BY 4.0; the university repository cover page also confirms CC BY. No separate third-party credit or reuse exclusion appears in the Figure 3 caption.",
+      "extraction_method": "Exact vector extraction using PyMuPDF; original paths and glyph outlines retained. No redrawing or synthetic data.",
+      "crop_box_pdf_points": [
+        163,
+        363,
+        559,
+        550
+      ],
+      "svg_sha256": "f2d918b883e7f7c1d608e3b097f19b977bb7091b17b8545f83acaa0af933ce92"
+    },
+    {
+      "article_figure": 7,
+      "site_file": "_posts/statcom/figs/fig07-rivera-2021-fig06-voltage-reference-response.svg",
+      "source_authors": [
+        "David Rivera",
+        "Daniel Guillen",
+        "Jonathan C. Mayo-Maldonado",
+        "Jesus E. Valdez-Resendiz",
+        "Gerardo Escobar"
+      ],
+      "source_title": "Power Grid Dynamic Performance Enhancement via STATCOM Data-Driven Control",
+      "source_year": 2021,
+      "source_journal": "Mathematics 9(19), 2361",
+      "source_doi": "https://doi.org/10.3390/math9192361",
+      "source_pdf": "https://eprints.whiterose.ac.uk/id/eprint/184812/1/mathematics-09-02361-v2.pdf",
+      "source_figure": 6,
+      "source_pdf_page": 14,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Same explicit article CC BY 4.0 statement. Figure 6 reports the authors' simulation results and has no separate third-party credit or reuse exclusion.",
+      "extraction_method": "Exact vector extraction using PyMuPDF; original paths and glyph outlines retained. No redrawing or synthetic data.",
+      "crop_box_pdf_points": [
+        166,
+        418,
+        413,
+        550
+      ],
+      "svg_sha256": "a896cb82501ab54ce2c6d2fb16be0510e5045ddc698bd627080b66207f120e67"
+    },
+    {
+      "article_figure": 8,
+      "site_file": "_posts/statcom/figs/fig08-rivera-2021-fig08-reactive-power.svg",
+      "source_authors": [
+        "David Rivera",
+        "Daniel Guillen",
+        "Jonathan C. Mayo-Maldonado",
+        "Jesus E. Valdez-Resendiz",
+        "Gerardo Escobar"
+      ],
+      "source_title": "Power Grid Dynamic Performance Enhancement via STATCOM Data-Driven Control",
+      "source_year": 2021,
+      "source_journal": "Mathematics 9(19), 2361",
+      "source_doi": "https://doi.org/10.3390/math9192361",
+      "source_pdf": "https://eprints.whiterose.ac.uk/id/eprint/184812/1/mathematics-09-02361-v2.pdf",
+      "source_figure": 8,
+      "source_pdf_page": 15,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "PDF page 2 (printed page 1) explicitly states CC BY 4.0. Figure 8 and adjacent discussion in Section 6.2 report the authors' simulation; no separate third-party credit or reuse exclusion appears.",
+      "extraction_method": "Exact vector extraction using PyMuPDF; original paths and glyph outlines retained. No redrawing or synthetic data.",
+      "crop_box_pdf_points": [
+        166,
+        404,
+        419,
+        540
+      ],
+      "svg_sha256": "68e88e1df3b5190821ecd9c4c53830e02f7777e04aceaa811ed76d2af6a42905"
+    },
+    {
+      "article_figure": 9,
+      "site_file": "_posts/statcom/figs/fig09-tu-2019-fig04-damping-control.svg",
+      "source_authors": [
+        "Ganggang Tu",
+        "Yanjun Li",
+        "Ji Xiang"
+      ],
+      "source_title": "Analysis, Control and Optimal Placement of Static Synchronous Compensator with/without Battery Energy Storage",
+      "source_year": 2019,
+      "source_journal": "Energies 12(24), 4715",
+      "source_doi": "https://doi.org/10.3390/en12244715",
+      "source_pdf": "https://www.mdpi.com/1996-1073/12/24/4715/pdf",
+      "source_figure": 4,
+      "source_pdf_page": 8,
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence": "Article CC BY 4.0 statement is on the final page. Figure 4 is the study's proposed control strategy and has no separate third-party credit or exclusion.",
+      "extraction_method": "Exact vector extraction using PyMuPDF; original paths and glyph outlines retained. No redrawing or synthetic data.",
+      "crop_box_pdf_points": [
+        162,
+        214,
+        434,
+        393
+      ],
+      "svg_sha256": "1db9327fab1b02a058a93a0712710bda6d2f9f8e2722d57b9b3e6b84ed8bc399"
+    }
+  ]
+}

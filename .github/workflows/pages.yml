@@ -25,6 +25,7 @@ jobs:
         run: |
           python3 scripts/check_site.py
           python3 tests/search_metadata.py
+          bundle exec ruby tests/post_assets.rb
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

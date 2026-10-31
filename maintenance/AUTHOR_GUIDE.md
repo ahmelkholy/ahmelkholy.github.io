@@ -26,6 +26,7 @@ Production build and generated-output checks:
 JEKYLL_ENV=production bundle exec jekyll build --trace
 python3 scripts/check_site.py
 python3 tests/authoring.py
+bundle exec ruby tests/post_assets.rb
 ```
 
 ## Write an article
@@ -63,9 +64,38 @@ Future-dated posts are excluded from normal builds. They appear on the next buil
 
 For real translations, add the same `translation_key: my-topic` to each counterpart, with its own `lang`, filename and URL. Keep one counterpart per language. The translation menu links only published counterparts. The site does not generate translations or pretend every post exists in three languages.
 
+## Articles with their own figures
+
+For an article with figures, put these two items in one topic folder under `_posts/`:
+
+| Item | Example |
+|---|---|
+| Dated Markdown file | `_posts/my-topic/2026-10-31-my-topic.md` |
+| Figure folder | `_posts/my-topic/figs/` |
+
+Keep the same front matter as an ordinary post. Write image paths relative to the Markdown file:
+
+```markdown
+![Describe the figure and what it shows](figs/figure-1.svg)
+
+*Figure 1. Reproduced from Figure X in Author et al. (year),
+[Paper title](https://doi.org/DOI). [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Cropped to the original figure area; no data or labels changed.*
+```
+
+Replace the placeholders with the actual source, original figure number and applicable licence. Use the authors' original figure when reproducing a paper; identify any crop or modification. Check any separate credit attached to the figure as well as the paper's licence. A citation alone does not grant reuse permission.
+
+Commit and push the whole folder. The existing Pages workflow builds it, adds the article to the Writing page, tags, RSS and sitemap, and publishes the figures. There is no manual asset-copying step. Remove `published: false` when ready; draft and future-date rules still apply.
+
+The `_plugins/post_assets.rb` plugin resolves image paths from the Markdown file's source directory and publishes referenced assets under `/assets/posts/`. This also works with custom permalinks and a nonempty site `baseurl`, and in RSS content and article excerpts. The original Markdown and asset files are not modified. Only referenced files are copied, and obsolete copies are removed on a normal rebuild.
+
+Supported files are SVG, PNG, JPEG, GIF, WebP, AVIF, ICO, TIFF and PDF. Standard Markdown images, HTML `<img>` / `<source>` image URLs and `srcset`, video posters, `<object data>` and links to these file types are resolved. For example, `[Paper](figs/paper.pdf#page=2)` publishes and links the adjacent PDF. External URLs, root-relative website URLs and in-page anchors keep their original behavior. Data-URI `srcset` values are left unchanged. Hidden files, symlinks, missing referenced figures and conflicting output paths stop the build with a message identifying the post and URL.
+
+Flat posts remain supported. A file at `_posts/2026-10-31-my-topic.md` can reference `my-topic/figs/figure-1.svg` or `my-topic/figure-1.svg`. Use a separate topic folder to avoid mixing figures from different articles. Keep downloads intended for publication in one of the supported formats; source Markdown and maintenance notes are not copied as figures.
+
 ## Images, code, math, headings and tags
 
-Put images in `images/` or `assets/images/`:
+Shared images can still go in `images/` or `assets/images/`:
 
 ```markdown
 ![Describe what the reader needs to understand](/images/example.png)
@@ -126,7 +156,7 @@ git push origin master
 
 Do not literally type `<reviewed-files>`; select the files you intend to publish. There is no need to commit `_site`, `.tools`, `vendor` or screenshots. One workflow builds and deploys on `master` or manual dispatch. GitHub Pages is free for this public repository.
 
-Read-only inspection during the rebuild confirmed that the default branch is `master`, Pages uses `build_type: workflow`, and HTTPS is enforced. No remote setting was changed. Check **Settings → Pages → Build and deployment → Source: GitHub Actions** if deployment is not enabled later, and ensure the `github-pages` environment permits `master`. The workflow follows [GitHub’s custom Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) using an uploaded static artifact. Remote deployment has not been tested because publishing was not authorized.
+The default branch is `master`, and GitHub Actions builds and deploys the site through the `github-pages` environment. The workflow follows [GitHub’s custom Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) using an uploaded static artifact. After pushing, wait for **Build and deploy Jekyll** to succeed before checking the public page. A failed build keeps the previously deployed site in place; open the failing step to find the post or asset that needs correction.
 
 ## What stays private to maintenance
 

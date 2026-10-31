@@ -263,6 +263,25 @@ summary:focus-visible {
   color: var(--muted);
   font-size: 0.85rem;
 }
+.prose .paper-figure {
+  margin-block: 2rem;
+}
+.paper-figure > a {
+  display: block;
+  padding: 12px;
+  background: #fff;
+  border-radius: 4px;
+}
+.prose .paper-figure img {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin-inline: auto;
+}
+.paper-figure figcaption {
+  margin-top: 12px;
+  line-height: 1.65;
+}
 .prose blockquote {
   border-inline-start: 3px solid var(--accent);
   margin-inline: 0;

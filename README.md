@@ -26,14 +26,37 @@ Write here in Arabic, English or Russian.
 
 Use today's date. A future date stays unpublished until a build runs after that date. Type `post` and select the **Article front matter** snippet to insert the header automatically.
 
+## Posts with figures
+
+Keep the Markdown file and a `figs` folder together inside a topic folder:
+
+```text
+_posts/my-topic/2026-10-31-my-topic.md
+_posts/my-topic/figs/figure-1.svg
+```
+
+In the Markdown file, use a relative image path and put the paper credit underneath:
+
+```markdown
+![Description of the figure](figs/figure-1.svg)
+
+*Figure 1. Reproduced from Figure X in Author et al. (year),
+[Paper title](https://doi.org/DOI), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+State any cropping or other changes here.*
+```
+
+Use the actual paper, figure number and reuse licence. Commit and push the **whole topic folder**. GitHub automatically adds the article to the Writing page, tags, RSS and sitemap, and publishes its referenced figures. SVG, PNG, JPEG, GIF, WebP, AVIF, ICO, TIFF and linked PDFs are supported. Missing local figures stop the build with the article name and missing path.
+
+The Markdown filename still needs `YYYY-MM-DD-` at the beginning. Remove `published: false` when the article is ready. Existing flat posts also work: `_posts/2026-10-31-my-topic.md` can link to `my-topic/figs/figure-1.svg`. No manual image copying or edits to the article index are needed.
+
 ## Your writing folders
 
 | Folder | Use |
 |---|---|
-| `_posts/` | Finished articles; these publish when pushed |
+| `_posts/` | Finished articles, optionally grouped into topic folders with `figs/`; these publish when pushed |
 | `_talks/` | Talks, presentation notes and slide links; use the **New talk** task |
 | `_drafts/` | Unfinished writing; not published |
-| `images/` | Images for articles |
+| `images/` | Shared images; article-specific figures can stay beside their Markdown |
 | `docs/` | Markdown project documentation |
 | `_pages/` | About/CV, projects, contact and other site pages |
 | `files/` | Public CV and other intended downloads |

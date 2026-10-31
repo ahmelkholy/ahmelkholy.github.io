@@ -19,7 +19,8 @@ class Page(HTMLParser):
         self.feed(text)
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
-        if tag == 'a': self.anchor = a.get('aria-label', '')
+        # An <a id="..."> is an in-page target, not an unlabeled hyperlink.
+        if tag == 'a': self.anchor = a.get('aria-label', '') if 'href' in a else None
         if tag == 'img' and self.anchor is not None: self.anchor += a.get('alt', '')
         if 'id' in a: self.ids.add(a['id'])
         if tag == 'html': self.lang, self.direction = a.get('lang'), a.get('dir')
